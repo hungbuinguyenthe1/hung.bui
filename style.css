@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+
+}
+
+
+/*--header--*/
+
+.container-header{
+    color: #FFFFFF;
+    width: 1440px;
+    height: 56px;
+}
+
+.container-header img{
+    border-radius: 8px;
+    margin-left: 144px;
+}
+.button {
+    background-color: #FFFFFF;
+    border: 1px solid;
+    color: #656565;
+    padding: 8px 24px 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    border-color:#DCDCDC;
+    float:right
+}
+/*--main--*/
+.container{
+    margin: 165px;
+    margin-top: 158px;
+    margin-bottom: 357px;
+}
+
+.container-left{
+    width: 730px;
+    height: 2096px;
+    top: 158px;
+    left: 165px;
+}
+
+
+.container-banner{
+    background-image: url(img/banner.png);
+    max-width: 100%;
+    height: 304px;
+    display: block;
+    border-radius: 8px;
+}
+
+.container-banner img{
+    width: 96px;
+    height: 96px;
+    margin: 24px;
+    border-radius: 8px;
+}
+.info-banner{
+    
+    max-width: 100%;
+    margin: 24px auto;
+ 
+
+}
+.Caterory-menu{
+    height: 56px;
+    margin-top: 24px;
+}
+.Caterory-menu ul{
+    list-style: none;
+    padding: 0;
+}
+.Caterory-menu ul li{
+    float: left;
+    line-height: 56px;
+    margin-right: 24px ;
+    
+}
+.Caterory-menu ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #808080;
+    display: block;
+}
+
+.container-cetagoryA{
+    margin: 0;
+}
+
+.Product-list{
+
+    height: 748px;
+    display: flex;
+}
+.Product-left{
+    width: 45%;
+    flex-basis: 40%;
+  
+    
+}
+.item-Product-left{
+    width: 350px;
+    height: 144px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0;
+    color: #DCDCDC;
+    margin: 24px 0;
+}
+.Product-info-left{
+    width: 190px;
+    height: 86px;
+    padding: 24px;
+    float: left;
+}
+.item-Product-left img{
+    border-radius: 8px;
+    float: right;
+    margin: 24px 24px;
+    width: 96px;
+    height: 96px;
+}
+
+.Product-right{
+    flex-basis: 40%;
+    float: right;
+    margin-right: 0;
+    width: 45%;
+    padding-left: 10%;
+    
+    
+    
+    
+   
+}
+.Product-info-right{
+    width: 190px;
+    height: 86px;   
+    float: left;
+    
+
+}
+.item-Product-right{
+    border: 1px solid;
+    border-radius: 8px;
+    color: #DCDCDC;
+    width: 350px;
+    height: 144px;
+    padding:24px;
+    margin-top: 24px;
+    
+    
+    
+
+}
+.item-Product-right img{
+    float: right;
+    width: 96px;
+    height: 96px;
+    margin: 0;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+.ProductB-left{
+    flex-basis: 40%;
+}
+
+.ProductB-right{
+    flex-basis: 40%;
+    float: right;
+    margin-right: 0;
+    width: 45%;
+    padding-left: 10%;
+}
+
+/*--footer--*/
+.footer {
+    position: fixed;
+    height: 198px;
+    bottom: 0;
+    width: 100%;
+    background-color: #F5F5F5;
+    padding-left: 155px;
+}
+.logo-oderich{
+    width: 117px;
+    height: 32px;
+    padding-top: 48px;
+    
+
+}
+.content-footer{
+    float: left;
+    padding-top: 16px;
+    padding-bottom: 48px;
+    
+
+}
+.web-footer{
+    font-size: 16px;
+    color: #808080;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.web-footer ul{
+    text-align: left;
+    
+}
+.web-footer ul li{
+    list-style: none;
+    margin-bottom: 8px;
+    float: left;
+    padding: 1px;
+}
+
+.web-footer ul li a{
+    text-decoration: none;   
+}
+
+.link-footer{
+    font-size: 14px;
+    width: 235px;
+    height: 22px;
+}
+.link-footer ul{
+   text-align: left;
+}
+
+.link-footer ul li{
+    list-style: none;
+    float: left;
+    padding: 1px;
+}
+.link-footer ul li a{
+    text-decoration: none;
+}
