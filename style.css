@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   
+    max-width: 2310px;
 
 }
 
@@ -39,6 +39,7 @@
     margin: 165px;
     margin-top: 158px;
     margin-bottom: 357px;
+    display: flex;
 }
 
 .container-left{
@@ -96,7 +97,6 @@
 }
 
 .Product-list{
-
     height: 748px;
     display: flex;
 }
@@ -104,8 +104,8 @@
     width: 45%;
     flex-basis: 40%;
   
-    
 }
+
 .item-Product-left{
     width: 350px;
     height: 144px;
@@ -134,13 +134,9 @@
     float: right;
     margin-right: 0;
     width: 45%;
-    padding-left: 10%;
-    
-    
-    
-    
-   
+    padding-left: 50px;
 }
+
 .Product-info-right{
     width: 190px;
     height: 86px;   
@@ -170,77 +166,163 @@
     border-radius: 8px;
 }
 
-.ProductB-left{
-    flex-basis: 40%;
+.Product-list-B{
+    width: 730px;
+    height: 748px;
+    display: flex;
 }
 
+.ProductB-left {
+    width: 350px;
+    height: 748px;
+    flex-basis: 40%;
+}
 .ProductB-right{
     flex-basis: 40%;
-    float: right;
-    margin-right: 0;
-    width: 45%;
-    padding-left: 10%;
+    float:right;
+    padding-left: 24px;
 }
 
-/*--footer--*/
-.footer {
-    position: fixed;
-    height: 198px;
-    bottom: 0;
-    width: 100%;
-    background-color: #F5F5F5;
-    padding-left: 155px;
-}
-.logo-oderich{
-    width: 117px;
-    height: 32px;
-    padding-top: 48px;
-    
 
-}
-.content-footer{
-    float: left;
-    padding-top: 16px;
-    padding-bottom: 48px;
-    
-
-}
-.web-footer{
-    font-size: 16px;
-    color: #808080;
-    display: block;
-    padding-bottom: 10px;
+/*------------Sidebar----------------*/
+.Sidebar{
+    width: 350px;
+    height: 565px;;
+    flex-basis: 25%;
+    margin-left: 30px;
+    border: 1px solid;
+    border-radius: 8px;
+    color: #DCDCDC;
 }
 
-.web-footer ul{
-    text-align: left;
-    
+.Pickup{
+    margin: 24px;
+    border: 1px solid;
+    border-radius: 8px;
+    width: 300px;
+    height: 48px;
+    color: #DCDCDC;
 }
-.web-footer ul li{
+.container-buy-amount-A{
+    padding: 4px;
+}
+
+.item-cartA{
+    width: 302px;
+    height: 94px;
+    margin-bottom: 16px;
+    display: flex;  
+}
+
+
+.cart-item-info{
+    width: 148px;
+    height: 94px;
+}
+.item-name{
+    color: #222222;
+    size: 16px;
+    line-height: 24px;
+    margin-left: 8px;   
+    font-weight: 600;
+}
+
+.item-name ul {
     list-style: none;
-    margin-bottom: 8px;
-    float: left;
-    padding: 1px;
+    padding: 0;
+
+}
+.item-name ul li{
+    size: 14px;
+    color: #808080;
+    font-weight: 400;
+  
 }
 
-.web-footer ul li a{
-    text-decoration: none;   
+.buy-amount-A button {
+    line-height: 24px;
+    cursor: pointer;
+}
+.price{
+    line-height: 24px;
+    size: 16px;
+    color: #222222;
+    font-weight: 400;
+ 
 }
 
-.link-footer{
-    font-size: 14px;
+.buy-amount-A amount {
+    width: 40px;   
+}
+.item-cartA .buy-amount .price{
+    flex: 25%;
+
+}
+.item-cartA .item-name{
+    flex: 45%;
+}
+
+.minus-A{
+    background: #F5F5F5;
+    width: 16px;
+    height: 16px;
+    border-radius: 55%;
+    border: none;
+}
+.plus-A{
+    background: #F5F5F5;
+    width: 16px;
+    height: 16px;
+    border-radius: 55%;
+    border: none;
+}
+.cart-fees{
+    width: 302px;
+    height: 24px;
+    margin: 24px ;
+}
+
+/*----footer----*/
+.container-footer {
+    background-color: #F5F5F5;
+    height: 198px;
+    width: 100%;
+    padding: 48px, 144px, 48px, 144px;
+
+}
+.footer-logo{
+    margin-left: 144px;
+    padding-top: 48px;
+    color: #808080;
+    width: 177px;
+    height: 32px;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.footer-content{ 
+    margin-left: 144px;
+    padding-top: 16px;
+
+}
+
+.text a{
+    text-decoration: none;
+    margin: 0;
+}
+
+.footer-links{
     width: 235px;
     height: 22px;
+ 
+
 }
-.link-footer ul{
-   text-align: left;
+.footer-links p{
+    float: left;
+    padding-right: 15px;
+    margin: 0;
 }
 
-.link-footer ul li{
-    list-style: none;
-    float: left;
-    padding: 1px;
-}
-.link-footer ul li a{
+.footer-links a{
     text-decoration: none;
 }
