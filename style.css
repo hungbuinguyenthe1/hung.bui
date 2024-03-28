@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     max-width: 2310px;
+    font-family: Inter;
 
 }
 
@@ -32,7 +33,9 @@
     cursor: pointer;
     border-radius: 8px;
     border-color:#DCDCDC;
-    float:right
+    float:right;
+    font-family: sans-serif;
+    
 }
 /*--main--*/
 .container{
@@ -87,7 +90,8 @@
 .Caterory-menu ul li{
     float: left;
     line-height: 56px;
-    margin-right: 24px ;
+    margin-right: 22px;
+    
     
 }
 .Caterory-menu ul li a {
@@ -95,6 +99,7 @@
     text-decoration: none;
     color: #808080;
     display: block;
+    
 }
 
 .container-cetagoryA{
