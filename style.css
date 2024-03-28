@@ -110,6 +110,19 @@
     height: 748px;
     display: flex;
 }
+
+.item-Product-left:hover{
+    border: 1px solid red;
+    box-shadow: 4px 4px 0 0 #cfc4c4;
+
+}
+.item-Product-right:hover{
+    border: 1px solid red;
+}
+
+
+
+
 .Product-left{
     width: 45%;
     flex-basis: 40%;
@@ -334,12 +347,14 @@
     border: 0 solid;
     border-radius: 8px;
     margin: 24px 24px;
+    box-shadow: 4px 4px 0 0 #c6c3c3;
 }
 
 .Total{
     padding-left: 108px;
     height: 24px;
     padding-top: 16px;
+    
 }
 /*----footer----*/
 .container-footer {
