@@ -118,6 +118,7 @@
 }
 .item-Product-right:hover{
     border: 1px solid red;
+    box-shadow: 4px 4px 0 0 #cfc4c4;
 }
 
 
