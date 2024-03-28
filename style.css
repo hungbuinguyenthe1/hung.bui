@@ -262,6 +262,7 @@
 
 .buy-amount-A amount {
     width: 40px;   
+    line-height: 24px;
 }
 .item-cartA .buy-amount .price{
     flex: 25%;
@@ -293,6 +294,27 @@
     display: flex;
     padding-top: 16px;
 }
+.buy-amount-B amount {
+    width: 40px;
+    padding: 24px 0;
+}
+
+
+.minus-B{
+    background: #F5F5F5;
+    width: 16px;
+    height: 16px;
+    border-radius: 55%;
+    border: none;
+}
+.plus-B{
+    background: #F5F5F5;
+    width: 16px;
+    height: 16px;
+    border-radius: 55%;
+    border: none;
+}
+
 
 .cart-fees{
     width: 302px;
