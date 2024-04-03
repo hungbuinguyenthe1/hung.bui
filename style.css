@@ -362,8 +362,8 @@
     margin-right: 8px;
 }
 
-/* ---------------------------------------------->=1025px--------------------------------- */
-@media screen and (max-width:1280px) {
+/* ---------------------------------------------->=1px--------------------------------- */
+@media screen and  (max-width:1440px) {
     .wp-header,
     .content {
         width: 100%;
@@ -387,57 +387,6 @@
     }
 }
 
-/* ---------------------------------------------------------------------------------- */
-@media screen and (max-width: 1024px) {
-    /* -------- <= 1024px-------- */
-    
-    .wp-header,
-    .wp-footer,
-    .banner {
-        width: 100%;
-    }
-    .wp-header img  {
-        margin-left: 2%;
-    }
-    .button-header {
-        margin-right: 1%;
-    }
-    .content-left {
-        width: 60%;
-        padding-left: 1%;
-    }
-    .Sidebar {
-        margin-right: 1%;
-    }
-    .Category-Tabs {
-        width: 90%;
-        
-    }
-    .Category-A,
-    .Category-B {
-        width: 40%;
-    }
-    .ListProduct {
-        padding-top: 8%;
-        width: 100%;
-        padding-right: 0;
-    }
-    .ProductLeft {
-      width: 50%;
-      padding-right: 1%;
-      
-    }
-    .ProductRight {
-        width: 50%;
-        padding: 0;
-    }
-    .ItemProduct {
-        width: 100%; 
-    }
-    .Category-B {
-        padding-top: 8%;   
-    }
-}
 /* -----------------------Tables---------------- */
 @media screen and (min-width:768px) and (max-width: 1203px) {
     .wp-header,
@@ -448,6 +397,9 @@
     .content-left {
         width: 100%;  
         padding: 0 1%;
+    }
+    .ListProduct {
+        padding-left: 0;
     }
     .banner {
        width: 100%;
@@ -463,7 +415,8 @@
     }
     .Sidebar {
         margin-bottom: 2%;
-    }
+       
+}
 }
 
 /* ---------------------------------Mobies----------------------------- */
