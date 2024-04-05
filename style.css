@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+    max-width: 1476px;
+}
+/*-------------------header-----------------------*/
+.wp-header{
+    
+    height: 56px;
+    color: #ffffff;
+    margin-bottom: 24px;
+    
+}
+.wp-header img {
+    margin-left: 144px;
+    width: 40px;
+    height: 40px;
+    margin: 8px 144px;
+    cursor: pointer;
+}
+
+
+.button-header{
+    float: right;
+    padding: 8px 0;
+    margin-right: 144px;
+}
+
+.button-header button {
+    margin-right: 16px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    width: 138px;
+    height: 40px;
+    line-height: 56px;
+    cursor: pointer;
+
+}
+
+.button-header p {
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+    color: #808080;
+    
+}
+/*-------------------------Content---------------*/
+
+.content{
+    
+    margin: 0;
+    flex-wrap: wrap;
+}
+.content-left{
+    padding-left: 165px;
+    float: left;
+    box-sizing: border-box;
+    
+    
+}
+.banner{
+    width: 730px;
+    height: 304px;
+    background-image:linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(79, 79, 79, 0.127)), url(img/banner.png); 
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    background-color: #b7b5b5;
+    border-radius: 8px;
+}
+
+.content-banner{
+    width: 682px;
+    height: 256px;
+    padding: 24px 24px;
+}
+.content-banner img{
+    width: 96px;
+    height: 96px;
+    border-radius: 8px;
+}
+
+.restaurant-info{
+    width: 682px;
+    height: 88px;
+    padding: 16px 0;
+}
+
+.restaurant-info p{
+    line-height: 24px;
+    size: 16px;
+    font-weight: 400;
+    color: #ffffff;  
+}
+
+.Category-Tabs{
+    width: 730px;
+    height: 56px;
+    padding-top: 24px;
+    transition: all 0.5s;
+}
+
+.Category-Tabs ul li{
+    list-style: none;
+    float: left;
+    line-height: 56px;
+    padding-right: 22px;
+    size: 16px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    
+}
+.Category-Tabs ul li a{
+    font-weight: 400;
+    color:#808080;
+    size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    
+}
+.Category-Tabs ul li a:hover{
+    color: red;
+}
+
+.Category-Tabs li a:hover:after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 86px;
+    background-color: #FF6347;
+    bottom: 0;
+    left: 0;
+}
+/*------------------Product List------------*/
+.CategoryA{
+    height: 60px;
+    margin: 24px 0;
+}
+.ListProduct{
+    height: 648px;
+    display: block;
+    width: 730px;
+    padding:  0 24px 0 0;
+    
+    
+}
+.ProductLeft{
+    float: left;
+    width: 350px;
+    height: 648px;
+}
+.ItemProduct{
+    width: 350px;
+    height: 144px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.ItemProduct:hover{
+    border: 1px solid #FF6347;
+    box-shadow: 4px 4px 0 0 #d3d2d2;
+}
+.ItemProduct img{
+    width: 96px;
+    height: 96px;
+    float: right;
+    margin: 24px 24px;
+    border: 1px solid #808080;
+    border-radius: 8px;
+
+}
+
+.ProductInfo{
+    width: 190px;
+    height: 86px;
+    padding: 34px 16px;
+}
+
+.ProductInfo p{
+    padding-bottom: 8px; 
+}
+
+.ProductRight{
+    display: block;
+    float: right;
+    width: 350px;
+    padding: 0 30px;
+}
+
+.CategoryB{
+    width: 730px;
+    height: 60px;
+    margin: 24px 0 ;
+}
+ 
+/*-----------------------Side bar--------------*/
+
+.Sidebar{
+    width: 350px; 
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    margin-left:  30px;
+    margin-right: 165px;
+    display: flex;
+    float: right;
+}
+.contentSidebar{
+    padding: 24px 24px;
+    
+}
+.order{
+    width: 302px;
+    height: 28px;
+}
+
+.order p{
+    font-weight: 600;
+    font-size: 20px ;
+    line-height: 28px;
+    color: #222222;
+}
+
+.orderOption{
+    width: 302px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    color: #ffffff;
+    box-shadow: 2px 2px 0 0 rgba(34, 34, 34, 0.08)   ;
+    margin: 24px 0;
+}
+
+.orderOption p{
+    color: #222222;
+    float: left;
+    padding-top: 12px;
+    padding-right: 5px;
+}
+.orderOption a {
+    color: #222222;
+    float: left;
+    padding-top: 12px;
+    padding-right: 5px;
+}
+.orderOption  i {
+    cursor: pointer;
+}
+
+.cartContent{
+    width: 400px;
+    height: 248px;
+}
+
+.itemCart{
+    border: 1px solid #CCC;
+    height: 94px;
+    width: 302px;
+}
+
+.controlQuantiny{
+    width: 68px;
+    height: 24px;
+    float: left;
+}
+
+.product{
+    width: 148px;
+    height: 94px;
+    padding: 0 8px;
+    display: flex;    
+}
+
+.product ul{
+   padding: 0;
+}
+.product ul li{
+    list-style: none;
+}
+
+.product ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #808080;
+    size: 14px;
+    line-height: 22px;
+}
+.itemCart1 {
+    display: flex;
+    width: 302px;
+    height: fit-content;
+    gap: 4px;
+    margin:16px 0;  
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    background-color: #dcdcdc;
+    width: 740px;
+    padding-top: 0; 
+}
+
+.sticky ul li a {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #808080;
+}
+.sticky ul li :hover:after {
+    color: #fff;
+    position: absolute;
+    display: none;
+}
+.sticky ul li a:hover{
+    color: #fff;
+    position: sticky;
+    width: 86px;  
+}
+.minus,
+.plus {
+    width: 16px;
+    height: 16px; 
+    color: #222222;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.buy-amount-A input {
+    width: 20px;
+    border: 0cap;
+    color: rgba(34, 34, 34, 1);
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 16pxx;
+
+}
+.line{
+    width: 302px;
+    height: 1px;
+    color: #dcdcdc;
+    margin: 24px 0;
+}
+.Discount{
+   width: 302px;
+    height: 24px;
+    color: #28A745;
+    font-weight: 400;
+    line-height: 24px;
+    size: 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.Checkout{
+    background-color: #28A745;
+    width: 302px;
+    height: 48px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 4px 4px 0 0 #dcdcdc ;
+    cursor: pointer;
+}
+/*------------------------------Footer-------------------------------*/
+.wp-footer{
+    width: 100%;
+    height: 198px;
+    background-color: #F5F5F5;
+    display: flex;
+    padding: 48px 144px;
+    flex-direction: column;
+}
+.logo-footer{
+    width: 117px;
+    height: 32px;
+    margin-bottom: 16px;
+    font-size: 32px;
+    color: #808080;
+    
+}
+.link-logo{
+    font-weight:400;
+    font-size: 16px;
+    line-height: 24px; 
+    
+}
+.link-logo a{
+    text-decoration: none;
+    color: #0D6EFD;   
+}
+
+.link-footer{
+    color: #0D6EFD;
+    font-weight:400;
+    font-size: 16px;
+    line-height: 24px;  
+}
+.link-footer a{
+    text-decoration: none;
+    margin-right: 8px;
+}
+/* ---------------------------------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------->=1px--------------------------------- */
+@media screen and  (max-width:1440px) {
+    .wp-header,
+    .content {
+        width: 100%;
+    }
+    .wp-header {
+        padding-top: 1%;
+    }
+    .wp-header img {
+        margin-left: 1%;
+    }
+    .button-header {
+       margin-right: 5%;
+    }
+    .content-left {
+        padding-left: 1%;
+        padding-right: 0;
+    }
+    .Sidebar {
+        margin-right: 5%;
+        
+    }
+}
+
+/* -----------------------Tables---------------- */
+@media screen and (min-width:768px) and (max-width: 1204px) {
+    .wp-header,
+    .wp-footer,
+    .Main-content {
+        width: 100%;
+    }
+    .content-left {
+        width: 100%;  
+        padding: 0 1%;
+    }
+    .banner {
+        width: 100%;
+    }
+    .Category-Tabs {
+        width: 100%;
+    }
+    .Category-Tabs ul li a {
+        font-size: 20px; 
+    }
+    .ListProduct {
+        width: 100%;
+        padding-right: 0;
+    }
+    .ProductLeft,
+    .ProductRight {
+        width: 50%;
+    }
+    .ItemProduct {
+        width: 100%;
+    }
+    .Sidebar {
+        padding-right: 40%;
+        margin-bottom: 3%;
+    }
+    .contentSidebar {
+        margin-left: 5%;
+    }     
+}
+
+
+/* ---------------------------------Mobies----------------------------- */
+@media screen and (min-width: 320px) and  (max-width:767px) {
+    .wp-header,
+    .Main-content,
+    .content-left,
+    .Category-Tabs,
+    .Category-A,
+    .Category-B,
+    .ProductLeft,
+    .ProductRight {
+        width: 100%;
+    }
+    .Category-Tabs ul li a{
+        font-size: 13px;
+    }
+    .button-header {
+        width: 40%;
+        padding-right: 0;
+    }
+    .restaurant-info p {
+        font-size: 13px;
+    }
+    .ProductLeft {
+        padding-top: 15%;
+        height: fit-content;
+    }
+    .ProductRight {
+        padding-top: 20%;
+    }
+    .Category-A {
+        padding-top: 20%;
+    }
+    .Sidebar {
+        margin-bottom: 5%;
+    }
+    .wp-footer {
+        padding-left: 5%;
+    }
+    .footer-content {
+        width: 200%;
+    } 
+}
