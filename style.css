@@ -7,7 +7,6 @@
 }
 /*-------------------header-----------------------*/
 .wp-header{
-    
     height: 56px;
     color: #ffffff;
     margin-bottom: 24px;
@@ -25,11 +24,10 @@
 .button-header{
     float: right;
     padding: 8px 0;
-    margin-right: 144px;
+    padding-right: 165px;
 }
 
 .button-header button {
-    margin-right: 16px;
     border-radius: 8px;
     border: 1px solid #dcdcdc;
     background-color: #ffffff;
@@ -49,9 +47,10 @@
     
 }
 /*-------------------------Content---------------*/
-
+.Main-content {
+    max-width: 1476px;
+}
 .content{
-    
     margin: 0;
     flex-wrap: wrap;
 }
@@ -84,7 +83,6 @@
 }
 
 .restaurant-info{
-    width: 682px;
     height: 88px;
     padding: 16px 0;
 }
@@ -97,7 +95,6 @@
 }
 
 .Category-Tabs{
-    width: 730px;
     height: 56px;
     padding-top: 24px;
     transition: all 0.5s;
@@ -187,10 +184,10 @@
 }
 
 .ProductRight{
-    display: block;
+
     float: right;
     width: 350px;
-    padding: 0 30px;
+    padding-left: 30px;
 }
 
 .CategoryB{
@@ -212,7 +209,7 @@
 }
 .contentSidebar{
     padding: 24px 24px;
-    
+    width: 302px;
 }
 .order{
     width: 302px;
@@ -301,7 +298,7 @@
     position: fixed;
     top: 0;
     background-color: #dcdcdc;
-    width: 740px;
+    width: 50%;
     padding-top: 0; 
 }
 
@@ -409,130 +406,204 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------------------------------------->=1px--------------------------------- */
-@media screen and  (max-width:1440px) {
-    .wp-header,
-    .content {
-        width: 100%;
-    }
-    .wp-header {
-        padding-top: 1%;
-    }
-    .wp-header img {
-        margin-left: 1%;
-    }
-    .button-header {
-       margin-right: 5%;
-    }
-    .content-left {
-        padding-left: 1%;
-        padding-right: 0;
-    }
-    .Sidebar {
-        margin-right: 5%;
-        
-    }
+/* ------------------------Large Devices------------------------------------------ */
+@media screen and ( max-width:1440px) {   
 }
-
-/* -----------------------Tables---------------- */
-@media screen and (min-width:768px) and (max-width: 1204px) {
-    .wp-header,
-    .wp-footer,
-    .Main-content {
-        width: 100%;
-    }
+/* --------------------- <= 1024px ---------------------------------- */
+@media screen and ( max-width: 1024px) {
     .content-left {
-        width: 100%;  
-        padding: 0 1%;
+        width: 60%;
+        padding-left: 0;
     }
-    .banner {
+    .banner,
+    .ListProduct,
+    .ItemProduct,
+    .content-banner,
+    .CategoryA,
+    .CategoryB {
         width: 100%;
-    }
-    .Category-Tabs {
-        width: 100%;
-    }
-    .Category-Tabs ul li a {
-        font-size: 20px; 
-    }
-    .ListProduct {
-        width: 100%;
-        padding-right: 0;
     }
     .ProductLeft,
     .ProductRight {
         width: 50%;
     }
-    .ItemProduct {
-        width: 100%;
+    .ListProduct {
+        padding-right: 0;
+    }
+    .sticky {
+        width: 60%;
     }
     .Sidebar {
-        padding-right: 40%;
-        margin-bottom: 3%;
+        margin-right: 0;
     }
-    .contentSidebar {
-        margin-left: 5%;
-    }     
+    .cartContent {
+        width: 100%;
+    }
+    .button-header {
+        padding-right: 0;
+    }
 }
-
-
-/* ---------------------------------Mobies----------------------------- */
-/* @media screen and (min-width: 320px) and  (max-width:767px) {
-    .wp-header,
-    .Main-content,
+/* --------------------Tablet------------------- */
+@media screen and (max-width:820px) {
     .content-left,
-    .Category-Tabs,
-    .Category-A,
-    .Category-B,
+    .sticky {
+        width: 100%;
+    }
+    
+    .Sidebar {
+        margin-bottom: 2.5%;
+        margin-right: 0;
+    }
+    .cartContent {
+        width: 100%;
+    }
+    .button-header  {
+        margin-right: 0;
+    }
+    .button-header button {
+        width: 100%;
+    }
+
+}
+/* ----------------------Mobile------------- */
+@media screen and (max-width: 430px) {
+    .wp-header img {
+        margin-left: 0;
+    }
+    .ProductInfo {
+        width: 100%;
+    }
+    .banner {
+        background-size: cover;
+    }
+    .restaurant-info p {
+        font-size: 15px;
+    }
     .ProductLeft,
     .ProductRight {
         width: 100%;
     }
-    .Category-Tabs ul li a{
-        font-size: 13px;
-    }
-    .button-header {
-        width: 40%;
-        padding-right: 0;
-    }
-    .restaurant-info p {
-        font-size: 13px;
-    }
-    .ProductLeft {
-        padding-top: 15%;
-        height: fit-content;
-    }
     .ProductRight {
-        padding-top: 20%;
+        padding-top: 5%;
+        padding-left: 0;
     }
-    .Category-A {
-        padding-top: 20%;
+    .CategoryB {
+        height: auto;
     }
     .Sidebar {
-        margin-bottom: 5%;
+        width: 100%;
+    }
+    .contentSidebar {
+        width: 100%;
+        margin-left: 5%;
+    }
+    .container-content-footer {
+        width: 150%;
+    }
+    .container-content-footer p {
+        font-size: 15px;
     }
     .wp-footer {
-        padding-left: 5%;
-    }
-    .footer-content {
-        width: 200%;
+        padding-left: 7%;
     } 
-} */
+}
+
+/* -------------------------min 1025px----------------------------------------------------- */
+@media screen and (min-width:1025px) and (max-width:1439px) {
+    .content-left {
+        width: 60%;
+        padding-left: 0;
+    }
+    .banner,
+    .ListProduct,
+    .ItemProduct,
+    .content-banner,
+    .CategoryA,
+    .CategoryB {
+        width: 100%;
+    }
+    .ProductLeft,
+    .ProductRight {
+        width: 50%;
+    }
+    .ProductRight {
+        padding-left: 1%;
+    }
+    .ListProduct {
+        padding-right: 0;
+    }
+    .sticky {
+        width: 60%;
+    }
+    .Sidebar {
+        margin-right: 0;
+    }
+    .cartContent {
+        width: 100%;
+    }
+    .button-header {
+        padding-right: 0;
+    }
+}
+@media screen and (min-width:821px) and (max-width: 990px) {
+    .content-left,
+    .sticky {
+        width: 100%;
+    }
+    
+    .Sidebar {
+        margin-bottom: 2.5%;
+        margin-right: 0;
+    }
+    .cartContent {
+        width: 100%;
+    }
+    .button-header  {
+        margin-right: 0;
+    }
+    .button-header button {
+        width: 100%;
+    }
+}
+@media screen and (min-width:430px) and (max-width: 540px) {
+    .wp-header img {
+        margin-left: 0;
+    }
+    .ProductInfo {
+        width: 100%;
+    }
+    .banner {
+        background-size: cover;
+    }
+    .restaurant-info p {
+        font-size: 15px;
+    }
+    .ProductLeft,
+    .ProductRight {
+        width: 100%;
+    }
+    .ProductRight {
+        padding-top: 5%;
+        padding-left: 0;
+    }
+    .CategoryB {
+        height: auto;
+    }
+    .Sidebar {
+        width: 100%;
+    }
+    .contentSidebar {
+        width: 100%;
+        margin-left: 5%;
+    }
+    .container-content-footer {
+        width: 150%;
+    }
+    .container-content-footer p {
+        font-size: 15px;
+    }
+    .wp-footer {
+        padding-left: 7%;
+    } 
+}
+
