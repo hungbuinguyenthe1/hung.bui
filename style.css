@@ -1,0 +1,555 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+/* -----------------header------------------ */
+#header {
+    background-color: #fff;
+    height: 56px;
+}
+#header img {
+    width: 40px;
+    margin-left: 144px;
+    padding-top: 8px;
+}
+   
+.container-button {
+    margin-right: 144px;
+    float: right;
+    gap: 16px;
+    line-height: 40px;
+    padding: 8px ;
+}
+#header button {
+    width: 138px;
+    height: 40px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #808088;
+    background-color: #fff;
+}
+#header button:hover {
+    background-color: #dcdcdc;
+}
+#header a[data-tooltip] {
+    position: relative;
+}
+#header a[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: #808088;
+    color: #fff;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 4px;
+    top: -100%;
+    left: 110%;
+    right: -70%;
+    font-size: 13px; 
+    transform: scale(0);
+    transition: 0.25 ease-in-out;  
+}
+#header a[data-tooltip]:hover::before{
+    transform: scale(1);
+}
+.container-button button[data-tooltip] {
+    position: relative;
+}
+.container-button button[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: #b7b5b5;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    padding: 5px 28px;
+    border-radius: 4px;
+    top: 40px;
+    left: 3%;
+    font-weight: 100;
+    transform: scale(0);
+    transition: 0.25s ease-in-out;
+}
+.container-button button[data-tooltip]:hover::before {
+   transform: scale(1);
+}
+.Login i {
+    padding-right: 4px;
+}
+/* ----------------------content------------------------------- */
+#wp-content {
+    max-width: 1110px;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 24px;
+}
+#content {
+    width: 65%;
+    float: left;
+}
+.banner {
+    width: 100%;
+    height: 304px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(79, 79, 79, 0.127)), url(img/banner.png); 
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    background-color: #b7b5b5;
+    border-radius: 8px;
+}
+.contentBanner {
+    padding: 24px 24px;
+}
+.contentBanner img {
+    width: 96px;
+    border-radius: 8px;
+}
+.contentBanner h2 {
+    margin: 16px 0;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #fff;
+}
+.contentBanner p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 8px 0;
+}
+.RestaurentInfo i {
+    padding-right: 4px;
+}   
+.CategoryTabs {
+    padding-top: 24px;
+    width: 100%;
+    height: 56px;
+}
+.CategoryTabs ul li {
+    list-style: none;
+    float: left;
+    line-height: 56px;
+    padding-right: 22px;
+    size: 16px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+}
+.CategoryTabs a {
+    color: #808080;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding: 14px 0;
+}
+.CategoryTabs ul li a:hover {
+    color: #FF6347;
+}
+.CategoryTabs li a:hover::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 86px;
+    background-color: #FF6347;
+    bottom: 0;
+    left: 0;
+}
+.CategoryName {
+    height: auto;
+    padding-top: 24px;
+    margin-bottom: 24px;
+}
+.CategoryName h4 {
+    color: #222222;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    padding-bottom: 8px;
+}
+.CategoryName p {
+    color: #808080;
+    font-weight:400;
+    line-height: 24px;
+    font-size: 16px;
+}
+.ProductList {
+   padding-top: 24px;  
+}
+.pl-left {
+    width: 49%;  
+    float: left;
+}
+.itemPr {
+    height: 144px;
+    border: 1px solid #dcdcdc;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.itemPr img {
+    width: 96px;
+    height: 96px;
+    float: right;
+    margin: 24px 24px;
+    border-radius: 8px;
+}
+.itemPr:hover{
+    border: 1px solid #FF6347;
+    box-shadow: 4px 4px 0 0 #d3d2d2;
+    border-radius: 8px;
+}
+.prInfo {
+    padding: 24px 24px;
+}
+.prInfo p {
+    padding-bottom: 8px;
+}
+.prInfo h4{
+    color: #222222;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    padding-bottom: 8px;
+}
+.pl-right {
+    width: 49%;   
+    float: right;   
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    padding-top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    border-bottom: 1px solid #DCDCDC;
+}
+.sticky ul li :hover:after {
+    position: absolute;
+    display: none;
+}
+.sticky ul li a:hover{
+    color: #FF6347;
+    position: sticky;
+    font-weight: bold; 
+}
+/* -----------------------------sidebar---------------------------------- */
+#sidebar { 
+    width: 31%; 
+    height: 565px;  
+    float: right; 
+    border-radius: 8px;
+    border: 1px solid #dcdcdc;
+    display: block;
+}
+#sidebar p {
+    color:  #222222;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 24px 24px;
+}
+.ord-op {
+    height: 48px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    margin: 0 24px;
+    box-shadow: 2px 2px 0 0 rgba(34, 34, 34, 0.08) ;
+}
+.Pickup{
+    color: #222; 
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 48px;
+    cursor: pointer;
+}
+.Pickup[data-tooltip] {
+    position: relative;
+}
+.Pickup[data-tooltip]::before {
+    content: attr(data-tooltip);
+    background: #dcdcdc;
+    color: #fff;
+    text-align: center;
+    bottom: 140%;
+    right: -30%;
+    left: -30%;
+    line-height: 24px ;
+    position: absolute;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px 4px;
+    font-weight: 100;
+    transform: scale(0);
+}
+.Pickup[data-tooltip]:hover::before {
+    transform: scale(1);
+}
+.ord-op-text {
+    padding: 0 24px;
+}
+.ord-op i {
+    cursor: pointer;
+    color: #808080;
+}
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.text i {
+    margin-left: 10%;
+}
+.itemCart {
+    margin: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    height: fit-content;
+    width: 86%;
+}  
+#amount {
+    width: 20px;
+    font-weight: 400;
+    color: #222;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    text-align: center;
+}
+.minus,
+.plus {
+    border-radius: 8px;
+    width: 16px;
+    height: 16px;
+    margin: 4px 0;
+    border: none;
+    cursor: pointer;
+    color: #222222;
+}
+.icInfo a {
+    color: #222;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.icInfo li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #808080;
+}
+#Price {
+    color: #222;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+.line {
+    color: #DCDCDC;
+    margin: 0 24px;
+}
+.cartfees {
+    padding: 24px 24px;
+    justify-content: space-between;
+    display: flex;
+}
+.Discount {
+    color: #28A745;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.priceDC {
+    color: #28A745;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.Checkout {
+    background-color: #28A745;
+    height: 48px;
+    border-radius: 8px;
+    padding: 0 24px;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 24px;
+    cursor: pointer;
+    box-shadow: 4px 4px 0 0 rgba(34, 34, 34, 0.16);
+}
+.Ck,
+.total-Pr {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 48px;
+}
+
+/* ----------------------------footer------------------------------------- */
+#footer {
+    width: 100%;
+    height: 198px;
+    background-color: #F5F5F5;
+    display: flex;
+    padding: 48px 144px;
+    flex-direction: column;
+}
+.ft-logo {
+    height: 32px;
+    color: #808080;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.text {
+    padding-bottom: 8px;
+}
+.link-logo a,
+.ft-link a{
+    text-decoration: none;
+    color: #0D6EFD;
+    font-weight: 400;
+}
+.ft-logo a {
+    font-size: 16px;
+    line-height: 24px
+}
+.ft-link a {
+    font-size: 14px;
+    line-height: 22px;
+}
+/* ///-----------------------Responsive-----------------------/// */
+    
+/* width < 740px */
+@media only screen and (max-width:740px ) {
+    #content {
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    #sidebar {
+        float: left;
+        width: 48%;
+        margin-left: 1%;
+        margin-bottom: 24px;
+    }
+}
+/* Tablet width >= 740px and width <1024px */
+@media only screen and (min-width: 46.25em) and (max-width:63.9375em) {
+    #content {
+        width: 100%;
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    #sidebar {
+        float: left;
+        width: 48%;
+        margin-left: 1%;
+        margin-bottom: 24px;
+    }
+}
+@media screen and (min-width:1024px) {
+    #content {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+}
+@media screen and (max-width: 641px) {
+    #header img {
+        margin-left: 1%;
+    }
+    .container-button {
+        margin-right: 1%;
+    }
+
+    .Pickup,
+    .text {
+        font-size: 13px;
+    }
+    .icInfo a,
+    .icInfo li,
+    #buyamount,
+    .Price {
+        font-size: 13px;
+    }
+    
+}
+@media screen and (max-width:578px) {
+    .banner {
+        background-size: cover;
+    }
+    .contentBanner h2 {
+        font-size: 25px;
+        margin: 1% 0;
+    }
+    .RestaurentInfo p {
+        font-size: 13px;
+    }
+    #header img {
+        margin-left: 1%;
+    }
+    .container-button {
+        margin-right: 1%;
+    }
+    .pl-left,
+    .pl-right {
+        width: 100%;
+    }
+    #sidebar {
+        width: 98%;
+    }
+    .ord-op {
+        text-align: center;
+    }
+    #footer {
+        padding-left: 2%;
+    }
+    .ft-content {
+        width: 150%;
+    }
+}
+@media screen and (max-width:280px) {
+    #header img {
+        padding-top: 5%;
+    }
+    .container-button {
+        width: 82%;
+        padding-right: 1%;
+        padding-top:5%;
+        margin: 0;
+
+    }
+    #header button {
+        width: 50%;
+        float: left;
+    }
+    .contentBanner h2 {
+        font-size: 18px;
+    }
+    .RestaurentInfo p {
+        font-size: 12px;
+    }
+    .itemCart,
+    .ord-op {
+        text-align: center;
+    }
+    #footer {
+        padding-left: 1%;
+    }
+    .ft-content {
+        width: 180%;
+    }
+}  
+
+
