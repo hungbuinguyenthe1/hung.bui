@@ -13,296 +13,311 @@
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inter">
 </head>
 <body>
-    
-        <div class="wp-header">
-    <img src="img/logo.png" alt="" width="40px">       
-<div class="button-header" >
-            <button class="button" style="font-family: sans-serif;"><p>Nederlands</p></button> 
-            <button class="Log in"><p><i class="fa-regular fa-user" style=" color: #808080; padding-right: 8px;"></i>Log in</p></button>
+    <div id="wrapper">
+        <div id="header">
+            <a href="Ordrich" data-tooltip="Trang chủ"><img src="img/logo.png" alt=""></a>
+            <div class="container-button">
+            <button class="Nederlands" data-tooltip="Nederlands">Nederlands</button>
+            <button class="Login" data-tooltip="Log in"><i class="fa-regular fa-user"></i>Log in</button>
+            </div>            
         </div>
-        </div>
-
-    <div class="Main-content">
-        <div class="content">
-            <div class="content-left">
+        <div id="wp-content">
+            <div id="content">
                 <div class="banner">
-                    <div class="content-banner">
-                        <img src="img/logo.png" alt="">
-                        <h2 style="padding:16px 0; color: #ffffff; font-weight: 600; size: 32px; line-height: 40px;">Nooki Japanese Restaurant</h2>
-                        <div class="restaurant-info">
-                            <p><i class="fa-solid fa-location-pin" style="width: 14.67px; margin-right:8px;color: #FFFFFF; right: 8px;"></i>Main Street 123, 1234 AB, Rotterdam</p>
-                            <p><i class="fa-solid fa-phone" style="color:#FFFFFF; margin-right:5px;" ></i>0101234567</p>
-                            <p><i class="fa-solid fa-circle fa-2xs" style="color: #28a745; margin-right: 9px; "></i>Pickup: Open today 12:00 - 17:00, 18:00 - 22:30 <i class="fa-solid fa-circle-info fa-rotate-by" style="--fa-rotate-angle: 5deg;""></i></p>
+                    <div class="contentBanner">
+                        <a href="logoBanner"><img src="img/logo.png" alt=""></a>
+                        <h2>Nooki Japanese Restaurant</h2>
+                        <div class="RestaurentInfo">
+                            <p><i class="fa-solid fa-location-pin fa-sm"></i>Main Street 123, 1234 AB, Rotterdam</p>
+                            <p><i class="fa-solid fa-phone fa-xs"></i>0101234567</p>
+                            <p><i class="fa-solid fa-circle fa-2xs" style="color: #28a745;"></i>Pickup: Open today 12:00 - 17:00, 18:00 - 22:30 <i class="fa-solid fa-circle-info fa-rotate-by" style="--fa-rotate-angle: 5deg; cursor: pointer;"></i></p>
                         </div>
                     </div>
                 </div>
-                <div class="Category-Tabs">
+                <div class="CategoryTabs Menu" id="myMenu">
                     <ul>
-                        <li><a>Category A</a></li>
-                        <li><a>Category B</a></li>
-                        <li><a>Category C</a></li>
-                        <li><a>Category D</a></li>
-                        <li><a>Category E</a></li>
-                        <li><a>Category F</a></li>
-                        <li><a style="padding-right: 0;">More <i class="fa-solid fa-chevron-down" style="color: #808080;"></i></a></li>
+                        <li><a href="#Category A">Category A</a></li>
+                        <li><a href="#Category B">Category B</a></li>
                     </ul>
                 </div>
-                <div class="Category-A">
-                    <h4 style="color: #222222; font-weight: 600; size: 20px; line-height: 28px; padding-bottom: 8px;">Category A</h4>
-                    <p style="color: #808080; font-weight: 400; size: 16px; line-height: 24px;">Category description text</p>
+                <div class="CategoryName" id="Category A">
+                    <h4>Category A</h4>
+                    <p>Category description text</p>
                 </div>
-                <div class="ListProduct">
-                    <div class="ProductLeft">
-                        <div class="ItemProduct">
+                <div class="ProductList">
+                    <div class="pl-left">
+                        <div class="itemPr" onclick="handleItem()">
                             <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                             </div>
                         </div>
-                        <div class="ItemProduct">
+                        <div class="itemPr" onclick="handleItem()">
                             <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                             </div>
                         </div>
-                        <div class="ItemProduct">
+                        <div class="itemPr" onclick="handleItem()">
                             <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                             </div>
                         </div>
-                        <div class="ItemProduct">
+                        <div class="itemPr" onclick="handleItem()">
                             <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                             </div>
                         </div>
-                        
-                        
                     </div>
-                    <div class="ProductRight">
-                        <div class="ItemProduct">
+                    <div class="pl-right">
+                        <div class="itemPr" onclick="handleItem()">
                             <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                             </div>
                         </div>
-                        <div class="ItemProduct">
+                        <div class="itemPr" onclick="handleItem()">
                             <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                             </div>
                         </div>
-                        <div class="ItemProduct">
+                        <div class="itemPr" onclick="handleItem()">
                             <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                             </div>
                         </div>
-                        <div class="ItemProduct">
+                        <div class="itemPr" onclick="handleItem()">
                             <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="Category-B">
-                    <h4 style="color: #222222; font-weight: 600; size: 20px; line-height: 28px; padding-bottom: 8px;">Category B</h4>
-                    <p style="color: #808080; font-weight: 400; size: 16px; line-height: 24px;">Category description text</p>
+                <div class="CategoryName" id="Category B">
+                    <h4>Category B</h4>
+                    <p>Category description text</p>
                 </div>
-                <div class="ListProduct">
-                    <div class="ProductLeft">
-                        <div class="ItemProduct">
+                <div class="ProductList">
+                    <div class="pl-left">
+                        <div class="itemPr" onclick="handleItem()">
                             <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                             </div>
                         </div>
-                        <div class="ItemProduct">
+                        <div class="itemPr" onclick="handleItem()">
                             <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                             </div>
                         </div>
-                        <div class="ItemProduct">
+                        <div class="itemPr" onclick="handleItem()">
                             <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                             </div>
                         </div>
-                        <div class="ItemProduct">
+                        <div class="itemPr" onclick="handleItem()">
                             <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
-                            </div>
-                        </div>
-                        
-                        
-                    </div>
-                    <div class="ProductRight">
-                        <div class="ItemProduct">
-                            <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
-                            </div>
-                        </div>
-                        <div class="ItemProduct">
-                            <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
-                            </div>
-                        </div>
-                        <div class="ItemProduct">
-                            <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
-                            </div>
-                        </div>
-                        <div class="ItemProduct">
-                            <img src="img/doan.png" alt="">
-                            <div class="ProductInfo">
-                                
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 600;">Product name</p>
-                                <p style="color: #808080; size: 14px; line-height: 22px; font-weight: 400;">Product description</p>
-                                <p style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 10,00</p>
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                             </div>
                         </div>
                     </div>
+                    <div class="pl-right">
+                        <div class="itemPr" onclick="handleItem()">
+                            <img src="img/doan.png" alt="">
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
+                            </div>
+                        </div>
+                        <div class="itemPr" onclick="handleItem()">
+                            <img src="img/doan.png" alt="">
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
+                            </div>
+                        </div>
+                        <div class="itemPr" onclick="handleItem()">
+                            <img src="img/doan.png" alt="">
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
+                            </div>
+                        </div>
+                        <div class="itemPr" onclick="handleItem()">
+                            <img src="img/doan.png" alt="">
+                            <div class="prInfo">
+                                <h4>Product Name</h4>
+                                <p style="color: #808080; font-size: 14px; font-weight: 400;">Product description</p>
+                                <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            <div id="sidebar">
+                <p>Your order</p>
+                <div class="ord-op">
+                    <div class="ord-op-text">
+                        <span class="Pickup" data-tooltip="Pickup"><i class="fa-solid fa-bag-shopping" style="color: #222222;"></i>Pickup</span>
+                        <span class="text">at our location<i class="fa-solid fa-pencil fa-2xs"></i></span>
+                    </div>
+                </div>
+                <div class="cartContent">
+                    <div class="itemCart">
+                        <div id="buyamount">
+                            <button class="minus" onclick="handleMinus()"><i class="fa-solid fa-minus fa-sm"></i></button>
+                            <input type="text" name="amount" id="amount" value="1">
+                            <button class="plus" onclick="handlePlus()"><i class="fa-solid fa-plus fa-sm"></i></button>
+                        </div>
+                        <div class="icInfo">
+                            <a>Product Name A</a>
+                            <li>Choice name A</li>
+                            <li>Choice name B</li>
+                            <li>Choice name C</li>
+                        </div>
+                        <span id="Price">€ 10.00</span>
+                    </div>   
+                    <div class="itemCart">
+                        <div id="buyamount">
+                            <button class="minus" onclick="handleMinus()"><i class="fa-solid fa-minus fa-sm"></i></button>
+                            <input type="text" name="amount" id="amount" value="1">
+                            <button class="plus" onclick="handlePlus()"><i class="fa-solid fa-plus fa-sm"></i></button>
+                        </div>
+                        <div class="icInfo">
+                            <a>Product Name B</a>
+                            <li>Choice name A</li>
+                            <li>Choice name B</li>
+                        </div>
+                        <div class="Price">€ 220,00</div>
+                    </div> 
+                    <div class="itemCart">
+                        <div id="buyamount">
+                            <button class="minus" onclick="handleMinus()"><i class="fa-solid fa-minus fa-sm"></i></button>
+                            <input type="text" name="amount" id="amount" value="1">
+                            <button class="plus" onclick="handlePlus()"><i class="fa-solid fa-plus fa-sm"></i></button>
+                        </div>
+                        <div class="icInfo">
+                            <a>Product Name C</a>
+                            <li>Choice name A</li>
+                        </div>
+                        <div class="Price">€ 220,00</div>
+                    </div>                   
+                </div>
+                <hr class="line">
+                <div class="cartfees">
+                    <span class="Discount">Discount</span>
+                    <span class="priceDC">- € 15,50</span>
+                </div>
+                <div class="Checkout">
+                    <span class="Ck"> Checkout</span>
+                    <span class="total-Pr">€ 294,50</span>
                 </div>
             </div>
-
-            <div class="Sidebar">
-                <div class="contentSidebar">
-                    <div class="order">
-                        <p>Your order</p>
-                    </div>
-                    <div class="orderOption" >                       
-                        <p style="padding-left: 24px; font-weight: 600; size: 16px; line-height: 24px; color: #222222;"> <i class="fa-solid fa-bag-shopping" style="color: #222222;"></i> Pick up</p>
-                        <p style="font-weight: 400; size: 16px; line-height: 24px; color: #222222;"> at our location <i class="fa-solid fa-pencil" style=" color: #808080; padding-left: 48px;"></i></p>
-                    </div>
-                    <div class="cartContent">
-                        <div class="itemCart1 " style="padding-top: 0;">
-                            <div class="plus" style="height: 24px; width: 68px;">
-                                <button class="Minus" onclick="handleMinus" style="width: 16px; height: 16px; color:#222222; border: none; border-radius: 50%;"><i class="fa-solid fa-minus fa-sm" style="color: #222222;align-items: center;"></i></button>
-                                <button class="Amount" style="background-color: #FFFFFF; border: none;"> <p style="width: 20px; height: 24px; line-height: 24px;">22</p></button>
-                                <button class="Plus" onclick="handlePlus" style="width: 16px; height: 16px; color: #222222; border: none; border-radius: 50%;"><i class="fa-solid fa-plus fa-sm" style="color: #222222;"></i></button>
-                            </div>
-                            <div class="product"style="height: 94px;width: 148px;" >
-                                <ul> 
-                                    <li style="color: #222222; font-weight: 600; padding-bottom: 4px;"><a href="" style="font-weight: 600; color: #222222; size: 16px; line-height: 24px;">Product name A</a></li>
-                                    <li><a href="">Choice name A</a></li>
-                                    <li><a href="">Choice name B</a></li>
-                                    <li><a href="">Choice name C</a></li>
-                                </ul></div>
-                            <div class="Pri" style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 220,00</div>                                
-                        </div>
-                        <div class="itemCart1">
-                            <div class="plus" style="height: 24px; width: 68px;">
-                                <button class="Minus" style="width: 16px; height: 16px; color:#222222; border: none; border-radius: 50%;"><i class="fa-solid fa-minus fa-sm" style="color: #222222;align-items: center;"></i></button>
-                                <button class="Amount" style="background-color: #FFFFFF; border: none;"> <p style="width: 20px; height: 24px; line-height: 24px;">1</p></button>
-                                <button class="Plus" style="width: 16px; height: 16px; color: #222222; border: none; border-radius: 50%;"><i class="fa-solid fa-plus fa-sm" style="color: #222222;"></i></button>
-                            </div>
-                            <div class="product"style="height: fit-content ;width: 148px;" >
-                                <ul> 
-                                    <li style="color: #222222; font-weight: 600; padding-bottom: 4px;"><a href="" style="font-weight: 600; color: #222222; size: 16px; line-height: 24px;">Product name B</a></li>
-                                    <li><a href="">Choice name A</a></li>
-                                    <li><a href="">Choice name B</a></li>
-                                   
-                                </ul></div>
-                            <div class="Pri" style="color: #222222; size: 16px; height: fit-content; font-weight: 400; ">€ 10,00</div>
-
-                        </div>
-                        <div class="itemCart1 " style=" margin-top: 0;">
-                            <div class="plus" style="height: fit-content;  width: 68px;">
-                                <button class="Minus" style="width: 16px; height: 16px; color:#222222; border: none; border-radius: 50%;"><i class="fa-solid fa-minus fa-sm" style="color: #222222;align-items: center;"></i></button>
-                                <button class="Amount" style="background-color: #FFFFFF; border: none;"> <p style="width: 20px; height: 24px; line-height: 24px;">8</p></button>
-                                <button class="Plus" style="width: 16px; height: 16px; color: #222222; border: none; border-radius: 50%;"><i class="fa-solid fa-plus fa-sm" style="color: #222222;"></i></button>
-                            </div>
-                            <div class="product"style="height: 94px; width: 148px;" >
-                                <ul> 
-                                    <li style="color: #222222; font-weight: 600; padding-bottom: 4px;"><a href="" style="font-weight: 600; color: #222222; size: 16px; line-height: 24px;">Product name C</a></li>
-                                    <li><a href="">Choice name A</a></li>
-                                    
-                                </ul></div>
-                            <div class="Pri" style="color: #222222; size: 16px; line-height: 24px; font-weight: 400;">€ 80,00</div>
-
-                        </div>   
-                    </div>
-                    <div class="line"><hr></div>
-                    <div class="Discount">
-                        <div class="discount" style="font-weight: 600;"> Discount</div>
-                        <div class="discountPrice"> - € 15,50</div>
-                    </div>
-                    <div class="Checkout">
-                        <div class="Checkout1" style="margin: 12px 24px; font-weight: 600; size: 16px; ">Checkout</div>
-                        <div class="TotalPrice1" style="margin: 12px 24px; font-weight: 400; size: 16px;">€ 294,50</div>
-                    </div>
-                </div>
-            </div>    
+        </div>
+        <div id="footer">
+            <span class="ft-logo">orderich</span>
+            <div class="ft-content">
+                <p class="text">
+                 <span>Nooki Japanese Restaurant, powered by</span>
+                 <span class="link-logo"><a href="#">Orderich</a></span>
+                </p> 
+                <p class="ft-link">
+                 <span><a href="Web">Terms & conditions</a></span>
+                 <span><a href="Web">Privacy policy</a></span>
+                </p> 
+            </div>
         </div>
     </div>
+<!-- ------------------------Scroll------------------------- -->
+    <script>
+        window.onscroll = function() {myFunction()};
+        var Menu = document.getElementById("myMenu");
+        var sticky = Menu.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                Menu.classList.add("sticky");
+             } 
+            else {
+                Menu.classList.remove("sticky");
+            }
+            }
+    </script>
+<!-- --------------------------buy amount------------------- -->
+    <script>
+        let amountElement = document.getElementById('amount');
+        let amount = amountElement.value;
+        let render = (amount) => {
+            amountElement.value = amount
+        }
+        let handleMinus =() => {
+            if(amount > 1)
+                amount--;
+            console.log(amount);
+            render(amount)
+        }
+        let handlePlus = () => {
+            amount++
+            render(amount)
+        }
 
-        <div class="wp-footer">
-            <span class="logo-footer">
-                orderich
-            </span>
-            <div class="footer-content">
-               <p>
-                <span>Nooki Japanese Restaurant, powered by</span>
-                <span class="link-logo"><a href="#">Orderich</a></span>
-               </p> 
-               <p class="link-footer">
-                <span><a href="Web">Terms & conditions</a></span>
-                <span><a href="Web">Privacy policy</a></span>
-            </p> 
-            </div>
-        </div> 
-   
+        amountElement.addEventListener('input', () => {
+            amount = amountElement.value;
+            console.log(amount);
+            amount = parseInt(amount);
+            amount =(isNaN(amount)|amount==0)?1:amount;
+            render(amount);
+            console.log(amount);
+        })   
+    </script>
+<!-- ----------------số lượng -> giá ---------------------------- -->
+    <script>
+        let totalPrice = 10.00;
+        const price = 10.00;
+        function handleItem() {
+            amount++;
+            totalPrice += price;
+            render(amount)
+            updateDisplay();
+        } 
+        function updateDisplay() {
+            document.getElementById('Price').innerText = '$' + totalPrice.toFixed(2);     
+            document.getElementById('amount').innerText = amount;   
+        }
+    </script>
 </body>
 </html>
