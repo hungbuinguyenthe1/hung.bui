@@ -430,7 +430,7 @@
 /* ///-----------------------Responsive-----------------------/// */
    
 /* width < 740px */
-@media only screen and (max-width:740px ){
+@media only screen and (max-width:740px ) {
     #content {
         width: 100%;
         padding-left: 1%;
