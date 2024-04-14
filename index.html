@@ -15,10 +15,10 @@
 <body>
     <div id="wrapper">
         <div id="header">
-            <a href="Ordrich" data-tooltip="Trang chủ"><img src="img/logo.png" alt=""></a>
+            <a href="Ordrich"><img src="img/logo.png" alt=""></a>
             <div class="container-button">
-            <button class="Nederlands" data-tooltip="Nederlands">Nederlands</button>
-            <button class="Login" data-tooltip="Log in"><i class="fa-regular fa-user"></i>Log in</button>
+            <button class="Nederlands">Nederlands</button>
+            <button class="Login"><i class="fa-regular fa-user"></i>Log in</button>
             </div>            
         </div>
         <div id="wp-content">
@@ -35,10 +35,10 @@
                     </div>
                 </div>
                 <div class="CategoryTabs Menu" id="myMenu">
-                    <ul>
-                        <li><a href="#Category A">Category A</a></li>
-                        <li><a href="#Category B">Category B</a></li>
-                    </ul>
+                    <ul> 
+                        <li><a href="#Category A" id="categoryATab">Category A</a></li>
+                        <li><a href="#Category B" id="categoryBTab">Category B</a></li>
+                   </ul>
                 </div>
                 <div class="CategoryName" id="Category A">
                     <h4>Category A</h4>
@@ -193,8 +193,9 @@
                 <p>Your order</p>
                 <div class="ord-op">
                     <div class="ord-op-text">
-                        <span class="Pickup" data-tooltip="Pickup"><i class="fa-solid fa-bag-shopping" style="color: #222222;"></i>Pickup</span>
-                        <span class="text">at our location<i class="fa-solid fa-pencil fa-2xs"></i></span>
+                        <span class="Pickup"><i class="fa-solid fa-bag-shopping" style="color: #222222;"></i>Pickup</span>
+                        <span class="text">at our location</span>
+                        <span class="pencil"><i style="cursor: pointer; padding-left: 10%;" class="fa-solid fa-pencil fa-2xs"></i></span>
                     </div>
                 </div>
                 <div class="cartContent">
@@ -210,7 +211,7 @@
                             <li>Choice name B</li>
                             <li>Choice name C</li>
                         </div>
-                        <span id="Price">€ 10.00</span>
+                        <div class="Price">€ 10.00</div>
                     </div>   
                     <div class="itemCart">
                         <div id="buyamount">
@@ -223,7 +224,7 @@
                             <li>Choice name A</li>
                             <li>Choice name B</li>
                         </div>
-                        <div class="Price">€ 220,00</div>
+                        <div class="Price">€ 10,00</div>
                     </div> 
                     <div class="itemCart">
                         <div id="buyamount">
@@ -235,7 +236,7 @@
                             <a>Product Name C</a>
                             <li>Choice name A</li>
                         </div>
-                        <div class="Price">€ 220,00</div>
+                        <div class="Price">€ 10,00</div>
                     </div>                   
                 </div>
                 <hr class="line">
@@ -249,19 +250,22 @@
                 </div>
             </div>
         </div>
-        <div id="footer">
-            <span class="ft-logo">orderich</span>
-            <div class="ft-content">
-                <p class="text">
-                 <span>Nooki Japanese Restaurant, powered by</span>
-                 <span class="link-logo"><a href="#">Orderich</a></span>
-                </p> 
-                <p class="ft-link">
-                 <span><a href="Web">Terms & conditions</a></span>
-                 <span><a href="Web">Privacy policy</a></span>
-                </p> 
+        <div id="wp-footer">
+            <div class="footer">
+                <span class="ft-logo">orderich</span>
+                <div class="ft-content">
+                    <p class="text">
+                     <span>Nooki Japanese Restaurant, powered by</span>
+                     <span class="link-logo"><a href="#">Orderich</a></span>
+                    </p> 
+                    <p class="ft-link">
+                     <span><a href="Web">Terms & conditions</a></span>
+                     <span><a href="Web">Privacy policy</a></span>
+                    </p> 
+                </div>
             </div>
         </div>
+        
     </div>
 <!-- ------------------------Scroll------------------------- -->
     <script>
@@ -318,6 +322,17 @@
             document.getElementById('Price').innerText = '$' + totalPrice.toFixed(2);     
             document.getElementById('amount').innerText = amount;   
         }
+    </script>
+    <script>
+      function handleTabClick(event) {
+    // Loại bỏ lớp "active" khỏi tất cả các tab trước khi thêm vào tab mới được click
+    document.querySelectorAll('.CategoryTabs ul li a').forEach(function(tab) {
+        tab.classList.remove('active');
+    });
+
+    // Thêm lớp "active" vào phần tử li chứa tab được click
+    this.classList.add('active');
+}
     </script>
 </body>
 </html>
