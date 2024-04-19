@@ -95,49 +95,39 @@
     padding-right: 4px;
 }   
 .CategoryTabs {
-    margin-top: 24px;
+    margin-top: 40px;
+    margin-bottom: 24px;
     width: 100%;
-    height: 56px;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: 1px solid #DCDCDC;
+    height: 40px;
 }
-
-.CategoryTabs ul li {
-    list-style: none;
-    float: left;
-    padding-right: 22px;
-    font-size: 16px;
-    font-weight: 400;
-    position: relative;
-    cursor: pointer;
-    height: 56px;
-}
-
-.CategoryTabs a {
+nav a{
     color: #808080;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
     text-decoration: none;
     position: relative;
-    display: block;
-    padding: 14px 0;
-    height: 56px;
+    margin-right: 14px;
 }
-.CategoryTabs ul li a:hover {
+
+nav a:hover{
     color: #FF6347;
 }
-.CategoryTabs li a:hover::after{
+.active{
+    color: #FF6347;
+}
+
+nav a:hover::after {
     content: "";
     position: absolute;
     height: 2px;
     width: 86px;
     background-color: #FF6347;
-    bottom: 0;
+    top: 38px;
     left: 0;
-}
+} 
 .CategoryName {
     height: auto;
-    padding-top: 24px;
     margin-bottom: 24px;
 }
 .CategoryName h4 {
@@ -160,8 +150,7 @@
     width: 49%;  
     float: left;
 }
-.itemPr {
-    height: 144px;
+.itemPr {   
     border: 1px solid #dcdcdc;
     margin-bottom: 24px;
     border-radius: 8px;
@@ -181,6 +170,7 @@
 }
 .prInfo {
     padding: 24px 24px;
+    width: 70%;
 }
 .prInfo p {
     padding-bottom: 8px;
@@ -197,21 +187,22 @@
     float: right;   
 }
 .sticky {
-    position: fixed;
     top: 0;
     background-color: #fff;
     padding-top: 0;
-    position: sticky;
-    border-bottom: 1px solid #DCDCDC;
+    position: fixed;
+    border-bottom: #DCDCDC; 
+    padding-bottom: 15px;
+    margin-top: 0;
+    line-height: 40px;
+    padding-bottom: 10px;
 }
-.sticky ul li :hover:after {
-    position: absolute;
+.sticky a:hover:after { 
     display: none;
 }
-.sticky ul li a:hover{
+.sticky a:hover { 
     color: #FF6347;
     position: sticky;
-    font-weight: bold; 
 }
 /* -----------------------------sidebar---------------------------------- */
 #sidebar { 
@@ -260,12 +251,16 @@
     margin-left: 48px;
 }
 .cartContent {
-    padding: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 0;
 }
 .itemCart {
     display: flex;
     justify-content: space-between;
     height: fit-content;
+    padding-bottom: 16px;
 }  
 #amount {
     width: 20px;
@@ -276,8 +271,14 @@
     border: none;
     text-align: center;
 }
+.amount2 {
+    margin: 0 5px;
+}
 .minus,
-.plus {
+.plus,
+.minus2,
+.plus2,
+.btn {
     border-radius: 8px;
     width: 16px;
     height: 16px;
@@ -351,6 +352,19 @@
     line-height: 48px;
 }
 
+  
+
+  
+#buyamount .count {
+    margin: 0 5px;
+    font-weight: 400;
+    color: #222;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    text-align: center;
+}
+  
 /* ----------------------------footer------------------------------------- */
 #wp-footer {
     background-color:#f5f5f5 ;
@@ -392,9 +406,15 @@
     font-size: 14px;
     line-height: 22px;
 }
+
+
 /* ///-----------------------Responsive-----------------------/// */
    
-
+@media screen and (min-width: 1225px) {
+    .ord-op-text {
+        width: 90%;
+    }
+}
 @media screen and (max-width:1225px) {
     .ord-op {
         margin: 0 1%;  
@@ -489,7 +509,7 @@
     }
     .cartContent {
         width: 80%;
-        margin: 24px auto;
+        margin-bottom: 0;
     }
 }
 @media screen and (max-width: 840px) {
@@ -497,7 +517,7 @@
         width: 100%;
     }
 }
-@media screen and (max-width:675px) {
+@media screen and (max-width:688px) {
     #sidebar{
         width: 100%;
     }
@@ -537,7 +557,34 @@
         width: 200px;
     }
 }
+@media screen and (max-width:330px) and (max-width:374px) {
+    .icInfo {
+        width: 50%;
+    }
+    #buyamount {
+        width: 20%;
+    }
+    .icInfo a {
+        font-size: 13px;
+    }
+}
 
   
 
 
+.counter {
+    display: flex;
+    align-items: center;
+  }
+  
+  .counter button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .count {
+    margin: 0 10px;
+    font-size: 20px;
+  }
+  
