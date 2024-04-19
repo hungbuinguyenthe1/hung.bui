@@ -113,11 +113,11 @@ nav a{
 nav a:hover{
     color: #FF6347;
 }
+
 .active{
     color: #FF6347;
 }
-
-nav a:hover::after {
+nav a:active::after {
     content: "";
     position: absolute;
     height: 2px;
@@ -204,6 +204,16 @@ nav a:hover::after {
     color: #FF6347;
     position: sticky;
 }
+.sticky nav a:active::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 86px;
+    background-color: #FF6347;
+    top: 38px;
+    left: 0;
+}
+
 /* -----------------------------sidebar---------------------------------- */
 #sidebar { 
     width: 31%; 
