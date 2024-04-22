@@ -11,7 +11,10 @@
     <link type="text/css" rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inter">
-    <link rel="stylesheet" href="./script.js">
+    <link rel="stylesheet" href="./script/">
+    <script src="js/CountPrice.js"></script>
+    <script src="js/Active.js"></script>
+    <script src="js/Sticky.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -37,8 +40,8 @@
                 </div>
                 <div >
                     <nav class="CategoryTabs Menu" id="myMenu">
-                        <a href="#CategoryA" id="categoryATab" class="active" >Category A <span></span></a>
-                        <a href="#CategoryB" id="categoryBTab" >Category B <span></span></a>
+                        <a href="#CategoryA" class="CategoryTab" >Category A </a>
+                        <a href="#CategoryB" class="CategoryTab" >Category B </a>
                     </nav>   
                 </div>
                 <div class="CategoryName" id="CategoryA"   >
@@ -46,7 +49,7 @@
                     <p>Category description text </p>
                     <div class="ProductList">
                         <div class="pl-left">
-                            <div class="itemPr" onclick="handleItem()">
+                            <div class="itemPr" onclick="handleItemA()">
                                 <img src="img/doan.png" alt="">
                                 <div class="prInfo">
                                     <h4>Product Name</h4>
@@ -54,7 +57,7 @@
                                     <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                                 </div>
                             </div>
-                            <div class="itemPr" onclick="handleItem()">
+                            <div class="itemPr" onclick="handleItemA()">
                                 <img src="img/doan.png" alt="">
                                 <div class="prInfo">
                                     <h4>Product Name</h4>
@@ -62,7 +65,7 @@
                                     <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                                 </div>
                             </div>
-                            <div class="itemPr" onclick="handleItem()">
+                            <div class="itemPr" onclick="handleItemA()">
                                 <img src="img/doan.png" alt="">
                                 <div class="prInfo">
                                     <h4>Product Name</h4>
@@ -70,7 +73,7 @@
                                     <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                                 </div>
                             </div>
-                            <div class="itemPr" onclick="handleItem()">
+                            <div class="itemPr" onclick="handleItemA()">
                                 <img src="img/doan.png" alt="">
                                 <div class="prInfo">
                                     <h4>Product Name</h4>
@@ -80,7 +83,7 @@
                             </div>
                         </div>
                         <div class="pl-right">
-                            <div class="itemPr" onclick="handleItem()">
+                            <div class="itemPr" onclick="handleItemA()">
                                 <img src="img/doan.png" alt="">
                                 <div class="prInfo">
                                     <h4>Product Name</h4>
@@ -88,7 +91,7 @@
                                     <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                                 </div>
                             </div>
-                            <div class="itemPr" onclick="handleItem()">
+                            <div class="itemPr" onclick="handleItemA()">
                                 <img src="img/doan.png" alt="">
                                 <div class="prInfo">
                                     <h4>Product Name</h4>
@@ -96,7 +99,7 @@
                                     <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                                 </div>
                             </div>
-                            <div class="itemPr" onclick="handleItem()">
+                            <div class="itemPr" onclick="handleItemA()">
                                 <img src="img/doan.png" alt="">
                                 <div class="prInfo">
                                     <h4>Product Name</h4>
@@ -104,7 +107,7 @@
                                     <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                                 </div>
                             </div>
-                            <div class="itemPr" onclick="handleItem()">
+                            <div class="itemPr" onclick="handleItemA()">
                                 <img src="img/doan.png" alt="">
                                 <div class="prInfo">
                                     <h4>Product Name</h4>
@@ -154,7 +157,7 @@
                             </div>
                         </div>
                         <div class="pl-right">
-                            <div class="itemPr" onclick="handleItem()">
+                            <div class="itemPr" onclick="handleItemB()">
                                 <img src="img/doan.png" alt="">
                                 <div class="prInfo">
                                     <h4>Product Name</h4>
@@ -162,7 +165,7 @@
                                     <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                                 </div>
                             </div>
-                            <div class="itemPr" onclick="handleItem()">
+                            <div class="itemPr" onclick="handleItemB()">
                                 <img src="img/doan.png" alt="">
                                 <div class="prInfo">
                                     <h4>Product Name</h4>
@@ -170,7 +173,7 @@
                                     <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                                 </div>
                             </div>
-                            <div class="itemPr" onclick="handleItem()">
+                            <div class="itemPr" onclick="handleItemB()">
                                 <img src="img/doan.png" alt="">
                                 <div class="prInfo">
                                     <h4>Product Name</h4>
@@ -178,7 +181,7 @@
                                     <p style="font-size: 16px; font-weight: 400; line-height: 24px;">€ 10,00</p>
                                 </div>
                             </div>
-                            <div class="itemPr" onclick="handleItem()">
+                            <div class="itemPr" onclick="handleItemB()">
                                 <img src="img/doan.png" alt="">
                                 <div class="prInfo">
                                     <h4>Product Name</h4>
@@ -202,9 +205,9 @@
                 <div class="cartContent">
                     <div class="itemCart">
                         <div id="buyamount">
-                            <button class="minus"  onclick="handleMinus()"><i class="fa-solid fa-minus fa-sm"></i></button>
-                            <input type="text" name="amount" id="amount" value="1">
-                            <button class="plus" onclick="handlePlus()"><i class="fa-solid fa-plus fa-sm"></i></button>
+                            <button class="btn" id="decreaseBtn1"><i class="fa-solid fa-minus fa-sm"></i></button>
+                            <span class="count" id="count1">1</span>
+                            <button class="btn" id="increaseBtn1"><i class="fa-solid fa-plus fa-sm"></i></button>
                         </div>
                         <div class="icInfo">
                             <a>Product Name A</a>
@@ -212,7 +215,7 @@
                             <li>Choice name B</li>
                             <li>Choice name C</li>
                         </div>
-                        <div id="Price">€ 10.00</div>
+                        <div id="Price1">€ 10.00</div>
                     </div>   
                     <div class="itemCart">
                         <div id="buyamount">
@@ -227,18 +230,7 @@
                         </div>
                         <span id="Price2">€ 10,00</span>
                     </div> 
-                    <div class="itemCart">
-                        <div id="buyamount">
-                            <button class="btn" id="decreaseBtn3"><i class="fa-solid fa-minus fa-sm"></i></button>
-                            <span class="count" id="count3">1</span>
-                            <button class="btn" id="increaseBtn3"><i class="fa-solid fa-plus fa-sm"></i></button>
-                        </div>
-                        <div class="icInfo">
-                            <a>Product Name C</a>
-                            <li>Choice name A</li>
-                        </div>
-                        <span id="Price3" >€ 10,00</span>
-                    </div>                   
+                                      
                 </div>
                 <hr class="line">
                 <div class="cartfees">
@@ -268,9 +260,12 @@
         </div>
         
     </div>
+    
 <!-- ------------------------Scroll------------------------- -->
     <script>
-        window.onscroll = function() {myFunction()};
+    window.onscroll = function() {
+        myFunction()
+    };
         var Menu = document.getElementById("myMenu");
         var sticky = Menu.offsetTop;
         function myFunction() {
@@ -280,166 +275,10 @@
             else {
                 Menu.classList.remove("sticky");
             }
-            }
-    </script>   
-<!-- ----------------amount - price ---------------------------- -->
-    <script>
-        let totalPrice = 10.00;
-        const price = 10.00;
-        function handleItem() {
-            amount++;
-            totalPrice += price;
-            render(amount)
-            updateDisplay();
-        }
-
-        function updateDisplay() {
-            document.getElementById('Price').innerText = ' € ' + totalPrice.toLocaleString('en-US', {minimumFractionDigits: 2});     
-            document.getElementById('amount').innerText = amount;   
-        }
+    }
     </script>
-<!-- -------------------------Gio 1------------------- -->    
-<script>
-    let amountElement = document.getElementById('amount');
-    let amount = amountElement.value;
-    let render = (amount) => {
-        amountElement.value = amount
-    }
-    let handleMinus =() => {
-        if(amount > 1)
-            amount--;
-        totalPrice -= price;
-        if (totalPrice < 10.00  ) {
-        totalPrice = 10.00; 
-    }
-        updateDisplay();
-        render(amount)
-    }
-    let handlePlus = () => {
-        amount++
-        totalPrice += price;
-        render(amount)
-        updateDisplay();
-    }
-    amountElement.addEventListener('input', () => {
-        amount = amountElement.value;
-        console.log(amount);
-        amount = parseInt(amount);
-        amount =(isNaN(amount)|amount==0)?1:amount;
-        render(amount);
-        console.log(amount);
-    })   
-</script>
-<!-- //--------------------------------Gio 2 ------------------------// -->
-<script>
-        document.addEventListener('DOMContentLoaded', function() {
-        const decreaseBtn = document.getElementById('decreaseBtn2');
-        const increaseBtn = document.getElementById('increaseBtn2');
-        const count2Span = document.getElementById('count2');
-        const Price2Span = document.getElementById('Price2');
-        let count2 = 1;
-        let Price2 = 10.00;
-        const updatePrice2 = () => {
-        Price2 = count2 * 10.00; 
-        Price2Span.textContent = ' € ' + Price2.toLocaleString('en-US', { minimumFractionDigits: 2 });
-        };
-        decreaseBtn.addEventListener('click', function() {
-        if(count2 > 1)
-        count2--;
-        count2Span.textContent = count2;
-        updatePrice2();
-        });
-        increaseBtn.addEventListener('click', function() {
-        count2++;
-        count2Span.textContent = count2;
-        updatePrice2();
+    
+    
 
-  });
-});
-</script>
-<!-- //--------------------------------Gio 3 ------------------------// -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const decreaseBtn = document.getElementById('decreaseBtn3');
-        const increaseBtn = document.getElementById('increaseBtn3');
-        const count3Span = document.getElementById('count3');
-        const Price3Span = document.getElementById('Price3');
-        
-        let count3 = 1;
-        let Price3 = 10.00;
-        
-        const updatePrice3 = () => {
-            Price3 = count3 * 10.00; 
-            Price3Span.textContent = ' € ' + Price3.toLocaleString('en-US', { minimumFractionDigits: 2 });
-        };
-        
-        decreaseBtn.addEventListener('click', function() {
-            if (count3 > 1)
-                count3--;
-            count3Span.textContent = count3;
-            updatePrice3();
-        });
-        
-        increaseBtn.addEventListener('click', function() {
-            count3++;
-            count3Span.textContent = count3;
-            updatePrice3();
-        });
-    });
-
-    let totalPrice3 = 10.00;
-    const price3 = 10.00;
-    function handleItemB() {
-        if (!isNaN(count3) && count3 >= 0) {
-        count3++;
-        console.log(count3);
-        totalPrice3 += price3;
-        render(count3);
-        updatePrice3();
-        updateDisplay();
-    }  
-}
-</script>
-<script>
-   document.addEventListener('DOMContentLoaded', function() { 
-    let totalPricesum = Price2 + Price3;
-    // Hiển thị tổng giá trị Checkout
-    document.getElementById('totalPr').textContent = ' € ' + totalPricesum.toFixed(2);
-});
-</script>
-<!------------------------active---------------------------------->
-  <script>
-    document.addEventListener("DOMContentLoaded", function(){
-        categoryATab.classList.remove("active")
-        var categoryATab = document.getElementById("categoryATab");
-        var categoryBTab = document.getElementById("categoryBTab");
-        categoryATab.addEventListener("click", function(event){
-            categoryATab.classList.add("active");
-            categoryBTab.classList.remove("active");
-            CategoryA.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        });
-        categoryBTab.addEventListener("click",function(event){
-            categoryBTab.classList.add("active");
-            categoryATab.classList.remove("active");
-            CategoryB.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        })
-        
-        });
-        // Xử lý khi scroll đến Category 
-        window.addEventListener("scroll", function() {
-        var categoryASection = document.getElementById("CategoryA");
-        var categoryBSection = document.getElementById("CategoryB");
-        var categoryAOffset = categoryASection.offsetTop;
-        var categoryBOffset = categoryBSection.offsetTop;
-        if (window.pageYOffset >= categoryAOffset && window.pageYOffset < categoryBOffset) {
-            categoryATab.classList.add("active");
-            categoryBTab.classList.remove("active");
-        } else if (window.pageYOffset >= categoryBOffset) {
-            categoryBTab.classList.add("active");
-            categoryATab.classList.remove("active");
-        }
-    });
-
-  </script>
 </body>
 </html>

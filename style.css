@@ -14,12 +14,17 @@
 #header {
     background-color: #fff;
     height: 56px;
-    max-width: 80%;
-    margin: 0 auto;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    transition: all 0.5s ease-in-out;
 }
+
 #header img {
     width: 40px;
     padding-top: 8px;
+    margin-left: 10%;
 }  
 .container-button {
     float: right;
@@ -28,6 +33,7 @@
     width: 273px;
     display: flex;
     justify-content: flex-end;
+    margin-right: 10%;
 }
 #header button {
     width: 119px;
@@ -52,7 +58,7 @@
 /* ----------------------content------------------------------- */
 #wp-content {
     width: 80%;
-    margin: 24px auto;
+    margin: 80px auto;
 }
 #content {
     width: 65%;
@@ -187,7 +193,7 @@ nav a:active::after {
     float: right;   
 }
 .sticky {
-    top: 0;
+    top: 56px;
     background-color: #fff;
     padding-top: 0;
     position: fixed;
@@ -217,13 +223,16 @@ nav a:active::after {
 /* -----------------------------sidebar---------------------------------- */
 #sidebar { 
     width: 31%; 
-    height: 565px;  
     float: right; 
     border-radius: 8px;
     border: 1px solid #dcdcdc;
     display: block;
     margin-right: 1%;
+    top: 0;
+    height: auto;
+    padding-bottom: 24px;  
 }
+
 #sidebar p {
     color:  #222222;
     font-size: 20px;
@@ -362,9 +371,6 @@ nav a:active::after {
     line-height: 48px;
 }
 
-  
-
-  
 #buyamount .count {
     margin: 0 5px;
     font-weight: 400;
@@ -440,7 +446,7 @@ nav a:active::after {
         width: 60%;
     }
     #sidebar {
-        width: 38%;
+        
     }
     .itemPr img {
         width: 90px;
