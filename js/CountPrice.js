@@ -91,15 +91,5 @@ document.addEventListener('DOMContentLoaded', function() {
     updateTotalPrice();
 });
 
-
- 
-
-
-
-
-
-
-
-// Tính tổng Checkout
     
 

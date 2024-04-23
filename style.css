@@ -112,7 +112,7 @@ nav a{
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
-    position: relative;
+   
     margin-right: 14px;
 }
 
@@ -151,11 +151,11 @@ nav a:active::after {
 }
 .ProductList {
    padding-top: 24px;  
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;  
 }
-.pl-left {
-    width: 49%;  
-    float: left;
-}
+
 .itemPr {   
     border: 1px solid #dcdcdc;
     margin-bottom: 24px;
@@ -187,10 +187,6 @@ nav a:active::after {
     font-weight: 600;
     line-height: 24px;
     padding-bottom: 8px;
-}
-.pl-right {
-    width: 49%;   
-    float: right;   
 }
 .sticky {
     top: 56px;
@@ -231,6 +227,7 @@ nav a:active::after {
     top: 0;
     height: auto;
     padding-bottom: 24px;  
+    
 }
 
 #sidebar p {
