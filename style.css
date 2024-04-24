@@ -57,13 +57,14 @@
 }
 /* ----------------------content------------------------------- */
 #wp-content {
-    width: 80%;
+    padding: 0 10%;
     margin: 80px auto;
+    display: flex;
 }
 #content {
     width: 65%;
-    float: left;
-    margin-right: 0.03%;
+    margin-right: 2%;
+    position: relative;
 }
 .banner {
     width: 100%;
@@ -112,12 +113,27 @@ nav a{
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
-   
     margin-right: 14px;
+    position: relative;
 }
 
 nav a:hover{
     color: #FF6347;
+   
+ 
+}
+nav a::after{
+    content: "";
+    background-color: #FF6347;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+}
+nav a:hover::after{
+    width: 100%;
+
 }
 
 .active{
@@ -149,9 +165,10 @@ nav a:active::after {
     line-height: 24px;
     font-size: 16px;
 }
-.ProductList {
-   padding-top: 24px;  
-   display: grid;
+#ProductListA,
+#ProductListB {
+    padding-top: 24px;  
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 24px;  
 }
@@ -198,6 +215,7 @@ nav a:active::after {
     margin-top: 0;
     line-height: 40px;
     padding-bottom: 10px;
+    width:55%;
 }
 .sticky a:hover:after { 
     display: none;
@@ -214,19 +232,19 @@ nav a:active::after {
     background-color: #FF6347;
     top: 38px;
     left: 0;
+    right: 0;
 }
 
 /* -----------------------------sidebar---------------------------------- */
 #sidebar { 
-    width: 31%; 
-    float: right; 
     border-radius: 8px;
     border: 1px solid #dcdcdc;
-    display: block;
-    margin-right: 1%;
-    top: 0;
+    right: 10%; 
     height: auto;
     padding-bottom: 24px;  
+    width: 25%;
+    height: fit-content;
+    position: fixed;
     
 }
 
@@ -377,7 +395,13 @@ nav a:active::after {
     border: none;
     text-align: center;
 }
-  
+#Price1, 
+#Price2 {
+    line-height: 24px;
+}
+html {
+    scroll-behavior: smooth;
+  }
 /* ----------------------------footer------------------------------------- */
 #wp-footer {
     background-color:#f5f5f5 ;
@@ -423,124 +447,104 @@ nav a:active::after {
 
 /* ///-----------------------Responsive-----------------------/// */
    
-@media screen and (min-width: 1225px) {
+@media screen and (max-width:1280px) {
+    #wp-content {
+        padding: 0 8%;
+    }
+    #content {
+        width: 62%;
+    }
+    #sidebar {
+        right: 8%
+    }
     .ord-op-text {
-        width: 90%;
+        width: 100%;
+    }  
+}
+    
+@media screen and (max-width:1180px) {
+    #wp-content {
+        padding: 0 7%;
+    }
+    #content {
+        width: 61%;
+    }
+    #sidebar {
+        width: 29%;
+        right: 7%;
     }
 }
-@media screen and (max-width:1225px) {
-    .ord-op {
-        margin: 0 1%;  
-        width: 80%; 
-        margin: 0 auto;
+@media screen and (max-width: 1024px) {
+    #wp-content {
+        padding: 0 5%;
     }
-    .ord-op-text {
-        width: 95%;
-    }
-}
-@media screen and (max-width:1147px) {
     #content {
         width: 60%;
     }
     #sidebar {
-        
+        width: 30%;
+        right: 5%;
     }
-    .itemPr img {
-        width: 90px;
-        height: 90px;
+    #header img {
+        margin-left: 5%;
     }
-    .prInfo {
-        padding-left: 15px;
+    .container-button {
+        margin-right: 5%;
     }
-   .prInfo h4 {
-        font-size: 13px;
-   }
-   .prInfo p {
-        font-size: 12px;
-   }
-}
-@media screen and (max-width: 1024px) {
-    .itemPr img {
-        width: 80px;
-        height: 80px;
-    }
-    .prInfo {
-        padding-left: 15px;
-    }
-   .prInfo h4 {
-        font-size: 13px;
-   }
-   .prInfo p {
-        font-size: 12px;
-   }
 
     
 }
-/* width < 740px */
-@media screen and (max-width:970px ) {
-    .itemPr img {
-        width: 75px;
-        height: 75px;
-    }
-    .contentBanner h2 {
-        font-size: 29px;
-    }
-    .prInfo h4 {
-        font-size: 12.5px;
-    }
-    .prInfo p {
-        font-size: 10px;
-    }
-    .cartContent {
-        padding: 10px;
-    }
-   .ord-op-text {
-    width: 100%;
+@media screen and (max-width:960px ) {
+
+    #content {
+        width: 59%;
    }
-   .Pickup,
-   .text {
-    font-size: 14px;
-   }
-   .banner {
-    background-size: cover;
-   }
-   .contentBanner h2 {
-    font-size: 27px;
-   }
-   .RestaurentInfo p {
-    font-size: 14px;
+     #sidebar {
+        width: 31%;
    }
 }
-@media screen and (max-width:953px) {
+@media screen and (max-width:930px ) {
     #content {
-        width: 100%;
+        width: 57%;
     }
     #sidebar {
-        float: left;
-        width: 49%;
-        margin-bottom: 24px;
+        width: 33%;
     }
-    .cartContent {
-        width: 80%;
-        margin-bottom: 0;
+    #header img {
+        margin-left: 5%;
     }
-}
-@media screen and (max-width: 840px) {
-    .cartContent {
-        width: 100%;
+    .contentBanner h2 {
+        font-size: 30px;
     }
 }
-@media screen and (max-width:688px) {
-    #sidebar{
-        width: 100%;
+@media screen and (max-width:890px) {
+    #sidebar {
+        width: 35%;
     }
 }
-@media screen and (max-width:560px) {
-    .pl-left,
-    .pl-right {
-        width: 100%;
+@media screen and (max-width:880px) {
+    .container-button {
+        margin-right: 5%;
     }
-} 
+    .banner {
+        background-size: cover;
+    }
+    .contentBanner h2 {
+        font-size: 28px;
+    }
+    .RestaurentInfo p {
+        font-size: 14px;
+    }
+    #content {
+        width: 55%;
+    }
+    #sidebar {
+        position: relative;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+ 
 @media screen and (max-width:500px) {
     .contentBanner a img {
         width: 85px;
@@ -585,19 +589,5 @@ nav a:active::after {
   
 
 
-.counter {
-    display: flex;
-    align-items: center;
-  }
-  
-  .counter button {
-    padding: 5px 10px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .count {
-    margin: 0 10px;
-    font-size: 20px;
-  }
+
   
