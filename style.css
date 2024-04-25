@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Inter;
-    
 }
 #wrapper {
     max-width:100%;
@@ -57,13 +56,13 @@
 }
 /* ----------------------content------------------------------- */
 #wp-content {
-    padding: 0 10%;
+    padding-left: 11%;
     margin: 80px auto;
     display: flex;
 }
 #content {
-    width: 65%;
-    margin-right: 2%;
+    width: 60%;
+    padding-right: 2%;
     position: relative;
 }
 .banner {
@@ -72,7 +71,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-image:linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(79, 79, 79, 0.127)), url(img/banner.png); 
-    background-size: 100%; 
     background-repeat: no-repeat;
     background-color: #b7b5b5;
     border-radius: 8px;
@@ -104,7 +102,6 @@
 .CategoryTabs {
     margin-top: 40px;
     margin-bottom: 24px;
-    width: 100%;
     border-bottom: 1px solid #DCDCDC;
     height: 40px;
 }
@@ -113,7 +110,7 @@ nav a{
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
-    margin-right: 14px;
+    margin-right: 24px;
     position: relative;
 }
 
@@ -208,14 +205,12 @@ nav a:active::after {
 .sticky {
     top: 56px;
     background-color: #fff;
-    padding-top: 0;
     position: fixed;
     border-bottom: #DCDCDC; 
     padding-bottom: 15px;
     margin-top: 0;
-    line-height: 40px;
-    padding-bottom: 10px;
-    width:55%;
+    line-height: 40px; 
+    width: 54%;
 }
 .sticky a:hover:after { 
     display: none;
@@ -239,12 +234,12 @@ nav a:active::after {
 #sidebar { 
     border-radius: 8px;
     border: 1px solid #dcdcdc;
-    right: 10%; 
+    right: 11%; 
     height: auto;
     padding-bottom: 24px;  
-    width: 25%;
     height: fit-content;
     position: fixed;
+    
     
 }
 
@@ -268,35 +263,45 @@ nav a:active::after {
     font-size: 16px;
     line-height: 48px;
 }
-.Pickup i {
-    margin-right: 4px;
-}
-.ord-op-text {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-.text {
+
+.ord-op-text h4 {
+    padding: 12px 24px;
     font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #222222;
+}
+.ord-op-text h4 .location{
     font-weight: 400;
+    font-size: 16px;
     line-height: 24px;
 }
-.text i {
+#bag {
+    padding-right: 4px;
+}
+
+#pencil {
     margin-left: 48px;
 }
+
 .cartContent {
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 24px;
     padding-bottom: 0;
+   
 }
 .itemCart {
     display: flex;
     justify-content: space-between;
     height: fit-content;
     padding-bottom: 16px;
+
 }  
-#amount {
+#buyamout {
+    width: 68px;
+}
+#count {
     width: 20px;
     font-weight: 400;
     color: #222;
@@ -305,9 +310,7 @@ nav a:active::after {
     border: none;
     text-align: center;
 }
-.amount2 {
-    margin: 0 5px;
-}
+
 .minus,
 .plus,
 .minus2,
@@ -374,6 +377,7 @@ nav a:active::after {
     margin: 0 24px;
     cursor: pointer;
     box-shadow: 4px 4px 0 0 rgba(34, 34, 34, 0.16);
+    text-decoration: none;
 }
 .Checkout:hover{
     background-color: #2f9848;
@@ -385,7 +389,6 @@ nav a:active::after {
     font-size: 16px;
     line-height: 48px;
 }
-
 #buyamount .count {
     margin: 0 5px;
     font-weight: 400;
@@ -446,148 +449,273 @@ html {
 
 
 /* ///-----------------------Responsive-----------------------/// */
+
+@media screen and (min-width:1199px) and (max-width:1400px)  {
+    #header img {
+        margin-left: 9%;
+    }
+    .container-button {
+        margin-right: 9%;
+    }
+    #wp-content {
+        padding-left: 10%;
+    }
+    #sidebar {
+        right: 10%;
+    }
+    #content {
+     width: 55%;
+    }
    
-@media screen and (max-width:1280px) {
-    #wp-content {
-        padding: 0 8%;
+}
+
+@media screen and (min-width: 992px ) and (max-width:1199px) {
+    #header img {
+        margin-left: 7%;
     }
-    #content {
-        width: 62%;
+    .container-button {
+        margin-right: 7%;
+    }
+    #wp-content {
+        padding-left: 8%;
     }
     #sidebar {
-        right: 8%
-    }
-    .ord-op-text {
-        width: 100%;
-    }  
-}
-    
-@media screen and (max-width:1180px) {
-    #wp-content {
-        padding: 0 7%;
+        right: 8%;
     }
     #content {
-        width: 61%;
+        width: 53%;
     }
-    #sidebar {
-        width: 29%;
-        right: 7%;
+    #ProductListA,
+    #ProductListB {
+        grid-template-columns:none;
+        display: block;
     }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px ) and (max-width: 991px) {
     #wp-content {
+        display: block;
+    }
+    #content {
+        width: 90%;
+    }
+    .sticky {
+        width: 80%;
+    }
+    #sidebar {
+        width: 90%;
+        position: static;
+    }
+    .ord-op-text h4 {
+        text-align: center; 
+    }
+}
+@media screen and (min-width: 600px ) and (max-width: 767px) {
+    #wp-content {
+        display: block;
+    }
+    #content {
+        width: 90%;
+    }
+    .sticky {
+        width: 80%;
+    }
+    #sidebar {
+        width: 90%;
+        position: static;
+    }
+    .ord-op-text h4 {
+        text-align: center; 
+    }
+}
+@media screen and (min-width: 515px ) and (max-width: 600px) {
+    #header img {
+        margin-left: 4%;
+    }
+    .container-button {
+        margin-right: 4%;
+    }
+    #wp-content {
+        display: block;
         padding: 0 5%;
     }
     #content {
-        width: 60%;
-    }
-    #sidebar {
-        width: 30%;
-        right: 5%;
-    }
-    #header img {
-        margin-left: 5%;
-    }
-    .container-button {
-        margin-right: 5%;
-    }
-
-    
-}
-@media screen and (max-width:960px ) {
-
-    #content {
-        width: 59%;
-   }
-     #sidebar {
-        width: 31%;
-   }
-}
-@media screen and (max-width:930px ) {
-    #content {
-        width: 57%;
-    }
-    #sidebar {
-        width: 33%;
-    }
-    #header img {
-        margin-left: 5%;
-    }
-    .contentBanner h2 {
-        font-size: 30px;
-    }
-}
-@media screen and (max-width:890px) {
-    #sidebar {
-        width: 35%;
-    }
-}
-@media screen and (max-width:880px) {
-    .container-button {
-        margin-right: 5%;
-    }
-    .banner {
-        background-size: cover;
-    }
-    .contentBanner h2 {
-        font-size: 28px;
-    }
-    .RestaurentInfo p {
-        font-size: 14px;
-    }
-    #content {
-        width: 55%;
-    }
-    #sidebar {
-        position: relative;
         width: 100%;
-        margin-top: 20px;
-    }
-}
- 
-@media screen and (max-width:500px) {
-    .contentBanner a img {
-        width: 85px;
-    }
-    .contentBanner h2 {
-        font-size: 23px;
-    }
-    .RestaurentInfo p {
-        font-size: 12.5px;
-    }
-}
-@media screen and (max-width:452px) {
-    .RestaurentInfo p {
-        font-size: 11px;
-        margin: 5px 0;
-    }
-    .contentBanner h2 {
-        font-size: 20px;
-    }
-    .contentBanner {
         padding-right: 0;
-        padding-left: 20px;
+    }
+    .sticky {
+        width: 90%;
+    }
+    #sidebar {
+        width: 100%;
+        position: static;
+    }
+    .ord-op-text h4 {
+        text-align: center; 
     }
 }
-@media screen and (min-width:375px) and (max-width:451px) {
+@media screen and (min-width: 480px ) and (max-width: 515px) {
+    #header img {
+        margin-left: 4%;
+    }
     .container-button {
-        width: 200px;
+        margin-right: 4%;
+    }
+    .contentBanner h2 {
+        font-size: 27px;
+    }
+    .RestaurentInfo p {
+        font-size: 15px;
+    }
+    #wp-content {
+        display: block;
+        padding: 0 5%;
+    }
+    #content {
+        width: 100%;
+        padding-right: 0;
+    }
+    .sticky {
+        width: 90%;
+    }
+    #sidebar {
+        width: 100%;
+        position: static;
+    }
+    .ord-op-text h4 {
+        text-align: center; 
     }
 }
-@media screen and (max-width:330px) and (max-width:374px) {
-    .icInfo {
-        width: 50%;
+@media screen and (min-width: 416px ) and (max-width: 480px) {
+    #header img {
+        margin-left: 4%;
     }
-    #buyamount {
-        width: 20%;
+    .container-button {
+        margin-right: 4%;
     }
-    .icInfo a {
+    .contentBanner h2 {
+        font-size: 25px;
+    }
+    .RestaurentInfo p {
         font-size: 13px;
     }
+    #wp-content {
+        display: block;
+        padding: 0 5%;
+    }
+    #content {
+        width: 100%;
+        padding-right: 0;
+    }
+    .sticky {
+        width: 90%;
+    }
+    #ProductListA,
+    #ProductListB {
+        grid-template-columns: none;
+        display: block;
+    }
+    #sidebar {
+        width: 100%;
+        position: static;
+    }
+    .ord-op-text h4 {
+        text-align: center; 
+    }
 }
-
-  
-
-
-
-  
+@media screen and (min-width: 320px ) and (max-width: 416px) {
+    #header img {
+        margin-left: 4%;
+    }
+    .container-button {
+        margin-right: 4%;
+        width: auto;
+    }
+    .contentBanner h2 {
+        font-size: 18px;
+    }
+    .contentBanner img {
+        width: 80px;
+    }
+    .RestaurentInfo p {
+        font-size: 13px;
+    }
+    #wp-content {
+        display: block;
+        padding: 0 5%;
+    }
+    #content {
+        width: 100%;
+        padding-right: 0;
+    }
+    .sticky {
+        width: 90%;
+    }
+    #ProductListA,
+    #ProductListB {
+        grid-template-columns: none;
+        display: block;
+    }
+    #sidebar {
+        width: 100%;
+        position: static;
+    }
+    .ord-op-text h4 {
+        text-align: center; 
+        font-size: 14px;
+    }
+    .ord-op-text h4 .location {
+        font-size: 14px;
+    }
+    #pencil {
+        margin-left: 0;
+    } 
+}  
+@media screen and (max-width:320px) {
+    #header img {
+        margin-left: 3%;
+    }
+    .container-button {
+        margin-right: 3%;
+        width: auto;
+    }
+    .contentBanner h2 {
+        font-size: 18px;
+    }
+    .contentBanner img {
+        width: 80px;
+    }
+    .RestaurentInfo p {
+        font-size: 13px;
+    }
+    #wp-content {
+        display: block;
+        padding: 0 5%;
+    }
+    #content {
+        width: 100%;
+        padding-right: 0;
+    }
+    .sticky {
+        width: 90%;
+    }
+    #ProductListA,
+    #ProductListB {
+        grid-template-columns: none;
+        display: block;
+    }
+    #sidebar {
+        width: 100%;
+        position: static;
+    }
+    .ord-op-text h4 {
+        text-align: center; 
+        font-size: 14px;
+    }
+    .ord-op-text h4 .location {
+        font-size: 14px;
+    }
+    #pencil {
+        margin-left: 0;
+    }
+    
+}

@@ -11,7 +11,6 @@
     <link type="text/css" rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="./fontawesome-free-6.5.1-web/css/all.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Inter">
-    <link rel="stylesheet" href="./script/">
     <script src="js/CountPrice.js"></script>
     <script src="js/Active.js"></script>
 </head>
@@ -197,9 +196,7 @@
                 <p>Your order</p>
                 <div class="ord-op">
                     <div class="ord-op-text">
-                        <span class="Pickup"><i class="fa-solid fa-bag-shopping" style="color: #222222;"></i>Pickup</span>
-                        <span class="text">at our location</span>
-                        <span class="pencil"><i style="cursor: pointer; padding-left: 10%;" class="fa-solid fa-pencil fa-2xs"></i></span>
+                        <h4><i class="fa-solid fa-bag-shopping" id="bag" style="color: #222222;"></i>Pickup <span class="location">at our location</span><i style="cursor: pointer; padding-left: 16px;" class="fa-solid fa-pencil fa-2xs" id="pencil"></i></h4>
                     </div>
                 </div>
                 <div class="cartContent">
@@ -237,10 +234,10 @@
                     <span class="Discount">Discount</span>
                     <span class="priceDC">- € 15,50</span>
                 </div>
-                <div class="Checkout">
+                <a href="checkout-page" class="Checkout"> 
                     <span class="Ck"> Checkout</span>
                     <span id="totalPr">€ 0.00</span>
-                </div>
+                </a>
             </div>
         </div>
         <div id="wp-footer">
